@@ -1,0 +1,27 @@
+Claude'un kullanım politikası güncellendi: 12 Kasım'da yürürlüğe giriyor
+
+Anthropic, 8 Ekim 2026'da Claude'un kullanım politikasını (kullanım kurallarını) yeniledi. Yeni kurallar 12 Kasım 2026'dan itibaren geçerli.
+
+Ne değişti?
+• Sağlığı, hukuki hakları, geçimi ya da temel hizmetlere erişimi etkileyebilecek bazı kullanımlar "yüksek riskli" sayılıyor; eğitim ve sertifika alanı da bunların arasında
+• Bu kullanımlarda Claude'un önerisini nitelikli bir insan gerçekten gözden geçirebilmeli ve değiştirebilmeli
+• Karardan etkilenen kişiye yapay zekanın (AI) kullanıldığı açıkça söylenmeli
+
+Eğitimciler için ne anlama geliyor?
+• Kapsamda: kabul, mezuniyet, ehliyet/lisans ya da sertifika kararını belirleyen sınav veya değerlendirme notlandırması (çoktan seçmeli testler hariç)
+• Kapsamda: öğrenci başvurularını kabul etme, reddetme veya sıralama; kopya (akademik usulsüzlük) ve okuldan uzaklaştırma kararları
+• Kapsam dışı: genel eğitim içeriği, iç taslak ve araştırma çalışmaları, yapay zekanın yargı yürütmediği sabit kural uygulaması
+
+Dikkat edilecekler
+• Yanıltmak için sahte hesap veya kişilik oluşturmak, yasaktan kaçmak için yeni hesap açmak yasak
+• Claude'a karşı sürekli ve gereksiz biçimde kötü davranmak da yasaklar arasında
+• Politika küresel olarak yayımlandı; Türkiye'ye özel ayrı bir kural belirtilmiyor
+• Bu bir hukuki tavsiye değildir; kendi durumunuz için resmi metni okuyun
+
+Kaynaklar
+anthropic.com/news/2026-usage-policy-update
+anthropic.com/legal/aup
+
+Kaydedin, meslektaşınıza gönderin.
+
+#yapayzeka #claude #anthropic #egitimci #dijitalegitim #girisimci
