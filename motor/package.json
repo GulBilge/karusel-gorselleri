@@ -1,0 +1,2 @@
+{ "name": "karusel-motoru", "version": "1.0.0", "private": true,
+  "dependencies": { "roughjs": "^4.6.6", "@fontsource/caveat": "^5.0.0", "@fontsource/montserrat": "^5.0.0" } }
