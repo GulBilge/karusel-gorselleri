@@ -1,0 +1,27 @@
+KAÇIRDIYSANIZ: Claude Max ve Team planlarına aylık API kredisi geldi
+
+Anthropic, 7 Ekim 2026'da Max ve Team abonelerine her ay Claude Platform'da kendi uygulamalarını ve yapay zeka ajanlarını (agent) çalıştırmaları için API (yazılım arayüzü) kredisi tanımlamaya başladığını duyurdu. Kredilerin dağıtımı birkaç güne yayılıyor.
+
+Ne değişti?
+• Max 5x: aylık 100 $, Max 20x: aylık 200 $
+• Team: Standart koltuk 20 $, Premium koltuk 100 $; krediler tek havuzda toplanır, en çok 500 $
+• Krediler her faturalama döneminde yenilenir, devretmez
+
+Kimler yararlanabilir?
+• Yalnızca Max ve Team planları (Free, Pro ve Enterprise kapsam dışı)
+• Planınızda en az 7 gün olmanız gerekiyor
+• claude.ai'yi tarayıcıdan açıp Ayarlar > Faturalandırma bölümünden bir Claude Console (geliştirici konsolu) hesabı bağlıyorsunuz; Team'de sahip veya yönetici talep eder
+
+Dikkat edilecekler
+• Kredi; API, Playground (deneme alanı), Claude Managed Agents ve Agent SDK için geçerli. Claude Code'un etkileşimli kullanımı ve Claude uygulamalarındaki ek kullanım kapsam dışı
+• Dönem sonunda kullanılmayan kredi silinir
+• Yalnızca bir Console hesabı bağlanabilir; sonradan değiştirmek için destek gerekir
+• Resmi sayfada ülke kısıtı belirtilmiyor; yine de planınızın ve bölgenizin koşullarını kontrol etmenizi öneririm
+
+Kaynaklar
+support.claude.com/en/articles/17154008-monthly-api-credits-for-max-and-team-plans
+support.claude.com/en/articles/12138966-release-notes
+
+Kaydedin, meslektaşınıza gönderin.
+
+#yapayzeka #claude #anthropic #egitimci #girisimci #dijitalegitim
