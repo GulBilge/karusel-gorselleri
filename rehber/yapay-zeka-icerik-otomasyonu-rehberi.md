@@ -76,7 +76,7 @@ Rutin, Claude'a her sabah verilen kalıcı bir talimat metnidir. İyi bir talima
 
 1. **Rol ve kitle:** Kim için, hangi dilde, hangi üslupla.
 2. **Adımlar:** Tarih kontrolü, haber arama, doğrulama, görsel üretme, yükleme, yayın, rapor. Numaralı yazın.
-3. **Kurallar:** Doğrulanamayanı yazma, abartma, aciliyet baskısı yapma, İngilizce terimin Türkçesini ver.
+3. **Kurallar:** Sabit hashtag'ler (örneğin her gönderide yalnızca iki marka etiketi), doğrulanamayanı yazma, abartma, aciliyet baskısı yapma, İngilizce terimin Türkçesini ver.
 4. **Yedek planlar:** Haber yoksa ne olacak, push başarısızsa ne olacak, aynı gün tekrar çalışırsa ne olacak.
 5. **Rapor:** Her gün ne yayınlandığını, nedenini, elenen haberleri ve doğrulanamayanları bir dosyaya yazması; son mesajın kısa olması (telefondan okunacak).
 6. **Bildirim:** Yayınlandı veya yayınlanamadı bilgisini telefonunuza göndermesi.
