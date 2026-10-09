@@ -9,7 +9,7 @@ async function build() {
   text('değişiyor', 160, 420, { size: TS.title, weight: 700, color: C.plum, rot: -1 });
   star(600, 372, 1.1); star(640, 410, 0.6);
 
-  body('Anthropic, Claude’un kullanım politikasını yeniledi. Yeni kurallar 12 Kasım’da yürürlüğe giriyor.', 152, 500);
+  body('Claude’un kullanım politikası yenilendi. Yeni kurallar 12 Kasım’da başlıyor.', 152, 510);
 
   // ---- İLLÜSTRASYON: sınav kâğıdı + yapay zeka parıltısı + büyüteç + takvim ----
   const ex = g({ transform: 'rotate(-5 330 840) translate(0 20)' });
@@ -24,7 +24,7 @@ async function build() {
   add(rc.circle(430, 800, 70, S({ stroke: C.red, strokeWidth: 3, roughness: 1.2 })), ex);
   text('85', 430, 814, { size: 44, weight: 700, color: C.red, anchor: 'middle', parent: ex });
 
-  star(500, 680, 1.5, C.gold); star(540, 726, 0.8, C.gold); star(178, 660, 0.9, C.gold);
+  star(500, 680, 1.5, C.gold); star(540, 726, 0.8, C.gold);
   text('yapay zeka', 520, 668, { size: 44, color: C.gold, rot: -6 });
 
   // büyüteç = insan kontrolü

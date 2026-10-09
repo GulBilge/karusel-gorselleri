@@ -6,9 +6,10 @@ const C = {
   peach: 'rgba(247,186,150,0.62)', mint: 'rgba(160,214,190,0.62)', pink: 'rgba(242,170,190,0.55)',
   red: '#D45A55', leaf: '#7FA68C'
 };
-// Yazı ölçeği: ana başlık 100 px (Caveat), gövde 38 px (Montserrat), satır aralığı 1.3.
-// Ara başlık (bölüm başlığı, soru satırı) 60–64 px Caveat; etiket ve kaynak satırı en az 30 px Montserrat.
-const TS = { title: 100, sub: 62, body: 38, label: 30, lh: 1.3 };
+// Yazı ölçeği: her şey el yazısı (Caveat), defter notu hissi. Ana başlık 100 px, gövde 52 px, satır aralığı 1.3.
+// (Caveat küçük harfleri dar; 52 px Caveat ≈ 38 px düz yazı tipi kadar okunur.)
+// Ara başlık 66 px; dipnot/kaynak en az 42 px. Montserrat yalnızca bant etiketlerinde (tarih, SINAV gibi), en az 30 px.
+const TS = { title: 100, sub: 66, body: 52, note: 42, label: 30, lh: 1.3 };
 // Güvenli alan: metinler ve önemli görseller bu kutunun içinde (kenarlardan en az 110 px)
 const SAFE = { l: 150, r: 970, t: 100, b: 1335 };
 const NS = 'http://www.w3.org/2000/svg';
@@ -38,7 +39,7 @@ function text(str, x, y, o = {}) {
 // o.dry = true ise çizmez, yalnızca ölçer (sayfaya sığıyor mu kontrolü için).
 function para(str, x, y, o = {}) {
   const size = o.size || TS.body, lh = Math.round(size * (o.lh || TS.lh)), maxW = o.width || (SAFE.r - x);
-  const st = { size, font: o.font || 'Montserrat', weight: o.weight || 500, color: o.color || C.ink, anchor: o.anchor, parent: o.parent };
+  const st = { size, font: o.font || 'Caveat', weight: o.weight || 600, color: o.color || C.ink, anchor: o.anchor, parent: o.parent };
   const probe = text('', x, y, st), lines = [];
   let cur = '';
   for (const w of str.split(' ')) {
@@ -102,10 +103,10 @@ async function fontsReady() {
 // Kontrol: güvenli alan dışına taşan, 30 px'ten küçük ya da üst üste binen yazıları konsola yazar (shot.js gösterir).
 function check() {
   const ts = [...svg.querySelectorAll('text')].filter(t => t.textContent.trim() && !t.dataset.free);
-  const boxes = ts.map(t => { const r = t.getBoundingClientRect(); return { t: t.textContent, x1: r.left, y1: r.top, x2: r.right, y2: r.bottom, s: +t.getAttribute('font-size') }; });
+  const boxes = ts.map(t => { const r = t.getBoundingClientRect(); return { t: t.textContent, x1: r.left, y1: r.top, x2: r.right, y2: r.bottom, s: +t.getAttribute('font-size'), f: t.getAttribute('font-family') }; });
   boxes.forEach(b => {
     if (b.x1 < SAFE.l - 40 || b.x2 > SAFE.r + 2 || b.y1 < SAFE.t - 10 || b.y2 > SAFE.b) console.log(`UYARI güvenli alan dışı: "${b.t}" [${b.x1 | 0},${b.y1 | 0} – ${b.x2 | 0},${b.y2 | 0}]`);
-    if (b.s < 30) console.log(`UYARI küçük yazı (${b.s}px): "${b.t}"`);
+    if (b.s < (b.f === 'Caveat' ? 40 : 30)) console.log(`UYARI küçük yazı (${b.f} ${b.s}px): "${b.t}"`);
   });
   for (let i = 0; i < boxes.length; i++) for (let j = i + 1; j < boxes.length; j++) {
     const a = boxes[i], b = boxes[j], ox = Math.min(a.x2, b.x2) - Math.max(a.x1, b.x1), oy = Math.min(a.y2, b.y2) - Math.max(a.y1, b.y1);

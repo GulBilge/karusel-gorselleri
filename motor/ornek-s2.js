@@ -8,10 +8,10 @@ async function build() {
     tape(146, y - 54, hw, 74, color, -0.8);
     text(h, 166, y, { size: TS.sub, weight: 700, color: C.plum });
     if (icon) icon(146 + hw + 56, y - 22);
-    y += 76;
+    y += 84;
     items.forEach(it => {
-      add(rc.circle(172, y - 13, 14, S({ ...I, fill: C.plum, fillStyle: 'solid', strokeWidth: 1.5 })));
-      y = body(it, 200, y) + 14;
+      add(rc.circle(172, y - 16, 14, S({ ...I, fill: C.plum, fillStyle: 'solid', strokeWidth: 1.5 })));
+      y = body(it, 200, y) + 8;
     });
     return y + 50;
   }

@@ -12,14 +12,14 @@ async function build() {
   function group(label, color, items, y) {
     tape(146, y - 44, label.length * 22 + 50, 60, color, -0.6);
     text(label, 166, y, { size: TS.label, font: 'Montserrat', weight: 700, color: C.plum, ls: 1.5 });
-    y += 70;
+    y += 80;
     items.forEach(it => {
-      add(rc.circle(172, y - 13, 14, S({ ...I, fill: C.plum, fillStyle: 'solid', strokeWidth: 1.5 })));
-      y = body(it, 200, y) + 14;
+      add(rc.circle(172, y - 16, 14, S({ ...I, fill: C.plum, fillStyle: 'solid', strokeWidth: 1.5 })));
+      y = body(it, 200, y) + 8;
     });
-    return y + 40;
+    return y + 30;
   }
-  let y = 500;
+  let y = 480;
   y = group('KAPSAMDA', C.peach, [
     'Sertifika, mezuniyet ya da kabul kararını belirleyen notlandırma*',
     'Başvuru kabul/ret ve sıralama; kopya ve disiplin kararları'
@@ -27,7 +27,7 @@ async function build() {
   y = group('KAPSAM DIŞI', C.mint, [
     'Genel eğitim içeriği, iç taslaklar ve araştırma çalışmaları'
   ], y);
-  body('* Çoktan seçmeli testler hariç', 150, y + 10, { size: TS.label, color: C.soft });
+  body('* Çoktan seçmeli testler hariç', 150, y + 10, { size: TS.note, color: C.soft });
 
   marker(200, 1222, 940, C.peach, 34);
   text('Detaylar ve kaynaklar açıklamada', 570, 1236, { size: 56, weight: 700, color: C.plum, anchor: 'middle' });
