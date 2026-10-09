@@ -1,4 +1,4 @@
-// Kullanım: node shot.js 1 2 3  -> s1.js, s2.js, s3.js dosyalarını out/01.png... olarak çizer
+// Kullanım: node shot.js 1 2 3 4  -> s1.js, s2.js... dosyalarını out/01.png... olarak çizer; UYARI satırlarını düzeltin
 let pw;
 try { pw = require('/opt/npm-tools/node_modules/playwright'); } catch (e) { pw = require('playwright'); }
 const { chromium } = pw;
@@ -9,6 +9,7 @@ const fs = require('fs'), path = require('path');
   const b = await chromium.launch(opts);
   const pg = await b.newPage({ viewport: { width: 1080, height: 1350 } });
   pg.on('pageerror', e => console.log('ERR', e.message));
+  pg.on('console', m => console.log('  ', m.text()));
   fs.mkdirSync('out', { recursive: true });
   for (const n of process.argv.slice(2)) {
     fs.writeFileSync(`slide${n}.html`, fs.readFileSync('tpl.html', 'utf8').replace('SLIDE', `s${n}.js`));

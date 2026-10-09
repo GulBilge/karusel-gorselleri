@@ -6,6 +6,11 @@ const C = {
   peach: 'rgba(247,186,150,0.62)', mint: 'rgba(160,214,190,0.62)', pink: 'rgba(242,170,190,0.55)',
   red: '#D45A55', leaf: '#7FA68C'
 };
+// Yazı ölçeği: ana başlık 100 px (Caveat), gövde 38 px (Montserrat), satır aralığı 1.3.
+// Ara başlık (bölüm başlığı, soru satırı) 60–64 px Caveat; etiket ve kaynak satırı en az 30 px Montserrat.
+const TS = { title: 100, sub: 62, body: 38, label: 30, lh: 1.3 };
+// Güvenli alan: metinler ve önemli görseller bu kutunun içinde (kenarlardan en az 110 px)
+const SAFE = { l: 150, r: 970, t: 100, b: 1335 };
 const NS = 'http://www.w3.org/2000/svg';
 const svg = document.getElementById('s');
 const rc = rough.svg(svg);
@@ -29,6 +34,24 @@ function text(str, x, y, o = {}) {
   if (o.max && t.getComputedTextLength() > o.max) { t.setAttribute('textLength', o.max); t.setAttribute('lengthAdjust', 'spacingAndGlyphs'); }
   return t;
 }
+// Kelime kaydırmalı paragraf. Satırları çizer, bir sonraki satırın y'sini döndürür.
+// o.dry = true ise çizmez, yalnızca ölçer (sayfaya sığıyor mu kontrolü için).
+function para(str, x, y, o = {}) {
+  const size = o.size || TS.body, lh = Math.round(size * (o.lh || TS.lh)), maxW = o.width || (SAFE.r - x);
+  const st = { size, font: o.font || 'Montserrat', weight: o.weight || 500, color: o.color || C.ink, anchor: o.anchor, parent: o.parent };
+  const probe = text('', x, y, st), lines = [];
+  let cur = '';
+  for (const w of str.split(' ')) {
+    probe.textContent = cur ? cur + ' ' + w : w;
+    if (cur && probe.getComputedTextLength() > maxW) { lines.push(cur); cur = w; } else cur = probe.textContent;
+  }
+  if (cur) lines.push(cur);
+  probe.remove();
+  if (!o.dry) lines.forEach((L, i) => text(L, x, y + i * lh, st));
+  return y + lines.length * lh;
+}
+// Gövde metni kısayolu
+const body = (str, x, y, o = {}) => para(str, x, y, o);
 // Bant vurgusu (washi tape)
 function tape(x, y, w, h, color, rot = 0) {
   const gg = g({ transform: `rotate(${rot} ${x + w / 2} ${y + h / 2})` });
@@ -54,8 +77,8 @@ function paper(opts = {}) {
   }
 }
 function footer(page) {
-  text('@teknikbilgekoc', 150, 1318, { size: 20, font: 'Montserrat', weight: 700, color: C.soft });
-  if (page) text(page, 73, 128, { size: 22, font: 'Montserrat', weight: 700, color: C.soft, anchor: 'middle' });  // sol kenar boşluğunda (profil kırpmasının ve IG sayacının dışında)
+  text('@teknikbilgekoc', 150, 1318, { size: 26, font: 'Montserrat', weight: 700, color: C.soft }).dataset.free = 1;
+  if (page) text(page, 66, 132, { size: 24, font: 'Montserrat', weight: 700, color: C.soft, anchor: 'middle' }).dataset.free = 1;  // sol kenar boşluğunda (profil kırpmasının ve IG sayacının dışında)
 }
 // İnce botanik dal
 function sprig(x, y, scale = 1, rot = 0, color = C.leaf) {
@@ -73,7 +96,20 @@ function star(x, y, k = 1, color = C.gold) {
   add(rc.path(`M${x} ${y - 16 * k} L${x + 4 * k} ${y - 4 * k} L${x + 16 * k} ${y} L${x + 4 * k} ${y + 4 * k} L${x} ${y + 16 * k} L${x - 4 * k} ${y + 4 * k} L${x - 16 * k} ${y} L${x - 4 * k} ${y - 4 * k} Z`, S({ stroke: color, fill: color, fillStyle: 'solid', strokeWidth: 1.5, roughness: 0.5 })));
 }
 async function fontsReady() {
-  for (const f of ['600 48px Caveat', '700 48px Caveat', '700 20px Montserrat', '500 20px Montserrat']) await document.fonts.load(f, 'ığüşöçĞÜŞİÖÇâ');
+  for (const f of ['600 48px Caveat', '700 48px Caveat', '700 38px Montserrat', '500 38px Montserrat']) await document.fonts.load(f, 'ığüşöçĞÜŞİÖÇâ');
   await document.fonts.ready;
 }
-function done() { window.READY = true; }
+// Kontrol: güvenli alan dışına taşan, 30 px'ten küçük ya da üst üste binen yazıları konsola yazar (shot.js gösterir).
+function check() {
+  const ts = [...svg.querySelectorAll('text')].filter(t => t.textContent.trim() && !t.dataset.free);
+  const boxes = ts.map(t => { const r = t.getBoundingClientRect(); return { t: t.textContent, x1: r.left, y1: r.top, x2: r.right, y2: r.bottom, s: +t.getAttribute('font-size') }; });
+  boxes.forEach(b => {
+    if (b.x1 < SAFE.l - 40 || b.x2 > SAFE.r + 2 || b.y1 < SAFE.t - 10 || b.y2 > SAFE.b) console.log(`UYARI güvenli alan dışı: "${b.t}" [${b.x1 | 0},${b.y1 | 0} – ${b.x2 | 0},${b.y2 | 0}]`);
+    if (b.s < 30) console.log(`UYARI küçük yazı (${b.s}px): "${b.t}"`);
+  });
+  for (let i = 0; i < boxes.length; i++) for (let j = i + 1; j < boxes.length; j++) {
+    const a = boxes[i], b = boxes[j], ox = Math.min(a.x2, b.x2) - Math.max(a.x1, b.x1), oy = Math.min(a.y2, b.y2) - Math.max(a.y1, b.y1);
+    if (ox > 4 && oy > Math.min(a.y2 - a.y1, b.y2 - b.y1) * 0.35) console.log(`UYARI üst üste: "${a.t}" / "${b.t}"`);
+  }
+}
+function done() { check(); window.READY = true; }
