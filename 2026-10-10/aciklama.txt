@@ -1,0 +1,28 @@
+Kaçırdıysanız: Claude'da belge, slayt ve tasarım artık beta'dan çıktı
+
+Anthropic, 8 Ekim 2026'da Claude'un belge (doküman), slayt (sunum) ve tasarım özelliklerinin beta (deneme) aşamasından çıktığını duyurdu. Üçü de Ücretsiz plan dahil tüm planlarda kullanılabiliyor. Yanında Team ve Enterprise planları için yeni bir özellik de var: Claude Motion (hareketli anlatım).
+
+Ne değişti?
+• Belge, Slayt ve Tasarım beta'dan çıktı; Ücretsiz dahil tüm planlarda
+• PowerPoint ve PDF'e aktarırken biçim korunuyor; slaytlar Google Slides'a düzenlenebilir dosya olarak gönderilebiliyor
+• Belge ve slaytlar Claude mobil uygulamasında da düzenlenebiliyor
+
+Yeni: Claude Motion (beta)
+• Mesaj kutusuna /motion yazınca Claude, isteğinize göre kısa (ör. 30 saniyelik) animasyonlu bir anlatım hazırlıyor
+• MP4 dosyası olarak indirebiliyorsunuz; yazı, rakam ve süreyi düzenleyebiliyorsunuz
+• Team ve Enterprise planlarında kullanılabiliyor
+
+Dikkat edilecekler
+• Motion bir video üretim modeli kullanmıyor: gerçek görüntü ya da yapay zekayla üretilmiş kişi çıkmıyor
+• Claude Design'ın ayrı sitesi (claude.ai/design) 14 Aralık'a kadar açık; o tarihte ayrı sitedeki projelerin herkese açık linkleri çalışmayı bırakıyor
+• Enterprise'da Belge/Slayt/Tasarım 15 Ekim'de varsayılan olarak açılıyor, Motion ise yönetici ayarından açılıyor
+• Türkiye'ye özel ayrı bir kısıtlama belirtilmiyor; Türkiye, Claude'un desteklenen ülkeleri arasında. Planınıza göre özelliklerin görünürlüğü değişebilir.
+• Fiyat ve kullanım limitleri duyuru sayfasında yer almıyor; kendi planınızı kontrol edin.
+
+Kaynaklar
+claude.com/resources/articles/dashboards-and-motion
+anthropic.com/supported-countries
+
+Kaydedin, meslektaşınıza gönderin.
+
+#teknikbilgekoc #gunlukyapayzekahaberi
