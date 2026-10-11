@@ -1,0 +1,24 @@
+Claude ipucu: Aynı ders notunu üç seviyeye uyarlayın
+
+Bugün yeni bir duyuru yok; onun yerine işinize yarayacak sade bir ipucu paylaşıyorum. Elinizdeki tek bir ders notunu, farklı seviyedeki öğrenci grupları için Claude ile yeniden yazdırabilirsiniz.
+
+Nasıl yapılır?
+• Ders notunuzu sohbete yapıştırın.
+• Kitleyi yazın: seviye ve süre.
+• Üç ayrı sürüm isteyin.
+• Çıktıyı okuyup kendi sesinizle düzeltin.
+
+Örnek istek:
+"Bu notu başlangıç, orta ve ileri seviye için üç sade sürüme çevir."
+
+Dikkat edilmesi gerekenler
+• Öğrenci adı, telefon gibi kişisel bilgileri yapıştırmayın.
+• Claude hata yapabilir; yayımlamadan önce çıktıyı mutlaka kontrol edin. Son söz sizin.
+• Türkiye, Claude'un desteklenen ülkeleri arasında; Claude'u claude.ai üzerinden kullanabilirsiniz.
+
+Kaynaklar
+anthropic.com/supported-countries
+
+Kaydedin, meslektaşınıza gönderin.
+
+#teknikbilgekoc #gunlukyapayzekahaberi
