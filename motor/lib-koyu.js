@@ -64,10 +64,8 @@ function diamond(x, y, r, color = C.gold, parent = svg) {
 // Arka plan: siyah + zümrüt ışıma (sol alt) + vurgu ışıması (sağ üst) + çift altın çerçeve. accent: 'pink' | 'purple'
 function paper(accent = 'purple') {
   el('rect', { x: 0, y: 0, width: W, height: H, fill: C.bg });
-  const g1 = glow(0, 1350, 760, C.emerald, 0.30);
-  const g2 = glow(1080, 60, 620, accent === 'pink' ? C.pink : C.purple, 0.22);
-  anim(g1, [{ opacity: 0.55 }, { opacity: 1 }, { opacity: 0.55 }], 0, 4000, 'ease-in-out', { origin: '0% 100%' });
-  anim(g2, [{ opacity: 1 }, { opacity: 0.5 }, { opacity: 1 }], 0, 3000, 'ease-in-out', { origin: '100% 0%' });
+  glow(0, 1350, 760, C.emerald, 0.30);
+  glow(1080, 60, 620, accent === 'pink' ? C.pink : C.purple, 0.22);
   const tex = g({ opacity: 0.06 });
   for (let i = 0; i < 220; i++) {
     const r = ((i * 9301 + 49297) % 233280) / 233280, r2 = ((i * 7907 + 1031) % 104729) / 104729;
@@ -117,17 +115,6 @@ function bullet(x, y, color = C.emerald) { diamond(x, y, 8, color); }
 function star(x, y, k = 1, color = C.goldHi) {
   return add(rc.path(`M${x} ${y - 16 * k} L${x + 4 * k} ${y - 4 * k} L${x + 16 * k} ${y} L${x + 4 * k} ${y + 4 * k} L${x} ${y + 16 * k} L${x - 4 * k} ${y + 4 * k} L${x - 16 * k} ${y} L${x - 4 * k} ${y - 4 * k} Z`, S({ stroke: color, fill: color, fillStyle: 'solid', strokeWidth: 1, roughness: 0.3 })));
 }
-// ANİMASYON (isteğe bağlı): window.ANIMATE yalnızca shot-anim.js ile açılır; statik çizimde anim() hiçbir şey yapmaz.
-// node: SVG öğesi/grubu (kendi transform özniteliği olmamalı; gerekirse grp() ile sarın). kf: Web Animations anahtar kareleri.
-function anim(node, kf, delay = 0, dur = 700, easing = 'cubic-bezier(.2,.8,.2,1)', o = {}) {
-  if (!window.ANIMATE || !node) return node;
-  node.style.transformBox = 'fill-box'; node.style.transformOrigin = o.origin || '50% 50%';
-  const a = node.animate(kf, { delay, duration: dur, easing, fill: 'both', iterations: o.iter || 1 });
-  a.pause();
-  return node;
-}
-// Çizilen öğeleri tek gruba sarar (anim() için)
-function grp(fn) { const n0 = svg.childNodes.length; fn(); const gg = g(); [...svg.childNodes].slice(n0, -1).forEach(n => gg.appendChild(n)); return gg; }
 async function fontsReady() {
   for (const f of ['700 48px "Playfair Display"', '600 48px "Playfair Display"', 'italic 600 48px "Playfair Display"', '600 48px Caveat', '700 38px Montserrat', '500 38px Montserrat']) await document.fonts.load(f, 'ığüşöçĞÜŞİÖÇâ');
   await document.fonts.ready;
@@ -145,4 +132,4 @@ function check() {
     if (ox > 4 && oy > Math.min(a.y2 - a.y1, b.y2 - b.y1) * 0.35) console.log(`UYARI üst üste: "${a.t}" / "${b.t}"`);
   }
 }
-function done() { if (!window.ANIMATE) check(); window.READY = true; }
+function done() { check(); window.READY = true; }
