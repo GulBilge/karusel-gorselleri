@@ -7,24 +7,60 @@ function face(p, dx = 22, y = 0, glasses = false) {
   [-dx, dx].forEach(x => { E(p, x, y, 5, 7, SK.ink); C2(p, x + 1.5, y - 2.5, 1.8, '#fff'); });
   if (glasses) { [-dx, dx].forEach(x => C2(p, x, y, 19, 'none', { stroke: C.goldHi, 'stroke-width': 4 })); el('line', { x1: -dx + 19, y1: y, x2: dx - 19, y2: y, stroke: C.goldHi, 'stroke-width': 4 }, p); }
 }
-// Kadın eğitmen: altın başörtülü, yuvarlak gözlüklü, elinde not kâğıdı
-function kadin(x, y, s = 1) {
+// Kadın karakter (ilk tercih). tip: 'basortulu' (varsayılan) | 'sacli' | 'kiz' (kız çocuğu) | 'anne' (kucağında bebek) | 'yasli'
+// o.basortu = true ise anne/yaşlı başörtülü çizilir. Konuya göre seç: çocuk/okul → kiz, aile/ebeveyn → anne, deneyim/usta → yasli, iş/uzman → basortulu ya da sacli.
+function kadin(x, y, s = 1, o = {}) {
+  const tip = o.tip || 'basortulu';
+  const scarf = tip === 'basortulu' || (!!o.basortu && (tip === 'anne' || tip === 'yasli'));
+  const hair = tip === 'yasli' ? '#D4D2DC' : tip === 'kiz' ? '#4A2C2A' : '#5A3A2E';
+  const cloth = { basortulu: C.pink, sacli: '#12A67C', kiz: C.purple, anne: '#0FA3A3', yasli: '#8E7AB5' }[tip];
+  const scarfC = tip === 'yasli' ? '#BFA8E8' : tip === 'anne' ? C.pink : '#E2BC62', scarfD = tip === 'yasli' ? '#A58DD0' : tip === 'anne' ? '#D04A82' : '#C79F45';
   const gg = g({ transform: `translate(${x} ${y}) scale(${s})` });
-  P(gg, 'M-140 190 Q-130 108 -60 98 L60 98 Q130 108 140 190 L150 330 L-150 330 Z', C.pink);
-  P(gg, 'M-80 40 Q-125 110 -142 178 Q0 215 142 178 Q125 110 80 40 Z', '#E2BC62');
-  P(gg, 'M-60 100 Q0 140 60 100 L50 150 Q0 175 -50 150 Z', '#C79F45', { opacity: 0.55 });
-  E(gg, 0, 0, 86, 92, '#E2BC62');
+  const w = tip === 'kiz' ? 104 : 140;
+  // saç arkası / sarkan saç / topuz
+  if (!scarf) {
+    if (tip === 'sacli') P(gg, 'M-86 -10 Q-96 90 -120 190 L120 190 Q96 90 86 -10 Z', hair);
+    if (tip === 'kiz') { C2(gg, -90, 44, 30, hair); C2(gg, 90, 44, 30, hair); C2(gg, -86, 14, 9, C.pink); C2(gg, 86, 14, 9, C.pink); }
+    if (tip === 'anne') C2(gg, 0, -96, 34, hair);
+    if (tip === 'yasli') C2(gg, 0, -100, 34, hair);
+    E(gg, 0, -6, 76, 82, hair);
+  }
+  P(gg, `M-${w} 190 Q-${w - 10} 108 -60 98 L60 98 Q${w - 10} 108 ${w} 190 L${w + 10} 330 L-${w + 10} 330 Z`, cloth);
+  if (tip === 'yasli') P(gg, 'M-120 150 Q0 200 120 150 L124 330 L90 330 Q0 230 -90 330 L-124 330 Z', '#A793CC', { opacity: 0.8 });
+  if (scarf) {
+    P(gg, 'M-80 40 Q-125 110 -142 178 Q0 215 142 178 Q125 110 80 40 Z', scarfC);
+    P(gg, 'M-60 100 Q0 140 60 100 L50 150 Q0 175 -50 150 Z', scarfD, { opacity: 0.55 });
+    E(gg, 0, 0, 86, 92, scarfC);
+  }
   E(gg, 0, 8, 58, 66, SK.skin);
-  face(gg, 22, 2, true);
-  P(gg, 'M-30 -14 q8 -8 16 -2 M14 -16 q8 -6 16 2', 'none', { stroke: '#8A5A3C', 'stroke-width': 3, 'stroke-linecap': 'round' });
+  if (!scarf) {
+    P(gg, tip === 'sacli' ? 'M-60 -6 Q-66 -82 0 -86 Q66 -82 60 -6 Q50 -34 12 -52 Q-30 -34 -60 -6 Z' : 'M-60 -10 Q-64 -80 0 -84 Q64 -80 60 -10 Q40 -50 0 -46 Q-40 -50 -60 -10 Z', hair);
+  }
+  face(gg, 22, 2, tip !== 'kiz');
+  if (tip === 'kiz') [-22, 22].forEach(xx => C2(gg, xx + 2.5, -3, 2.4, '#fff'));
+  P(gg, 'M-30 -14 q8 -8 16 -2 M14 -16 q8 -6 16 2', 'none', { stroke: tip === 'yasli' ? '#9C9AA8' : '#8A5A3C', 'stroke-width': 3, 'stroke-linecap': 'round' });
   P(gg, 'M0 12 q-5 10 3 12', 'none', { stroke: '#C98F6B', 'stroke-width': 3, 'stroke-linecap': 'round' });
   P(gg, 'M-18 36 Q0 52 18 36', 'none', { stroke: '#9B3D4F', 'stroke-width': 4, 'stroke-linecap': 'round' });
+  if (tip === 'yasli') {
+    P(gg, 'M-44 -2 q-8 4 -10 12 M44 -2 q8 4 10 12 M-30 -30 q30 -8 60 0 M-26 -40 q26 -6 52 0', 'none', { stroke: '#C98F6B', 'stroke-width': 2.4, 'stroke-linecap': 'round', opacity: 0.8 });
+    P(gg, 'M-30 38 q-4 8 -2 14 M30 38 q4 8 2 14', 'none', { stroke: '#C98F6B', 'stroke-width': 2.4, 'stroke-linecap': 'round', opacity: 0.7 });
+  }
   C2(gg, -38, 26, 10, SK.blush, { opacity: 0.35 }); C2(gg, 38, 26, 10, SK.blush, { opacity: 0.35 });
-  const pg = g({ transform: 'translate(0 222) rotate(-4)' }, gg);
-  el('rect', { x: -92, y: -64, width: 184, height: 128, rx: 10, fill: C.ivory }, pg);
-  el('rect', { x: -92, y: -64, width: 184, height: 26, rx: 10, fill: C.emerald }, pg);
-  [-16, 8, 32].forEach((yy, i) => el('line', { x1: -68, y1: yy, x2: 52 - i * 14, y2: yy, stroke: '#B9B1A2', 'stroke-width': 4, 'stroke-linecap': 'round' }, pg));
-  E(gg, -92, 232, 20, 17, SK.skin); E(gg, 92, 214, 20, 17, SK.skin);
+  if (tip === 'anne') {
+    // kucakta bebek
+    E(gg, -70, 238, 54, 64, '#F6E7D6'); E(gg, -70, 238, 54, 64, 'none', { stroke: C.gold, 'stroke-width': 3 });
+    C2(gg, -70, 196, 28, SK.skin); P(gg, 'M-98 190 Q-70 160 -42 190 Q-70 176 -98 190 Z', C.pink);
+    P(gg, 'M-80 198 q6 5 12 0 M-62 198 q6 5 12 0', 'none', { stroke: SK.ink, 'stroke-width': 2.4, 'stroke-linecap': 'round' });
+    C2(gg, -86, 208, 5, SK.blush, { opacity: 0.4 }); C2(gg, -54, 208, 5, SK.blush, { opacity: 0.4 });
+    E(gg, -30, 258, 20, 17, SK.skin); E(gg, -112, 262, 18, 15, SK.skin);
+    return gg;
+  }
+  const pg = g({ transform: `translate(0 ${tip === 'kiz' ? 232 : 222}) rotate(-4)` }, gg);
+  const pw = tip === 'kiz' ? 150 : 184;
+  el('rect', { x: -pw / 2, y: -64, width: pw, height: 128, rx: 10, fill: C.ivory }, pg);
+  el('rect', { x: -pw / 2, y: -64, width: pw, height: 26, rx: 10, fill: tip === 'kiz' ? C.pink : C.emerald }, pg);
+  [-16, 8, 32].forEach((yy, k) => el('line', { x1: -pw / 2 + 24, y1: yy, x2: pw / 2 - 40 - k * 14, y2: yy, stroke: '#B9B1A2', 'stroke-width': 4, 'stroke-linecap': 'round' }, pg));
+  E(gg, -pw / 2, 232, 20, 17, SK.skin); E(gg, pw / 2, 214, 20, 17, SK.skin);
   return gg;
 }
 // Erkek uzman: kısa saçlı, sakallı, yuvarlak gözlüklü, zümrüt blazerli, elinde not kâğıdı
@@ -83,7 +119,7 @@ function baykus(x, y, s = 1) {
   return gg;
 }
 // Kemerli pencere + sahne: kadın eğitmen ve üç basamakta üç hayvan öğrenci (temel · orta · ileri)
-// o.kisi: 'kadin' (varsayılan) | 'adam' → ana karakter; kadın ve erkek karakterleri dönüşümlü kullan.
+// o.kisi: 'kadin' (varsayılan, ilk tercih) | 'adam' (yalnızca içerik erkek karaktere özellikle uygunsa). Kadın için o.tip: 'basortulu' | 'sacli' | 'kiz' | 'anne' | 'yasli' (+ o.basortu).
 function sahneKapak(x, y, w, h, o = {}) {
   const id = 'arch' + sd(), bg = 'abg' + sd(), defs = svg.querySelector('defs') || el('defs');
   const lg = el('linearGradient', { id: bg, x1: 0, y1: 0, x2: 0.8, y2: 1 }, defs);
@@ -96,7 +132,7 @@ function sahneKapak(x, y, w, h, o = {}) {
   C2(svg, x + 480, y + 120, 44, C.goldHi, { opacity: 0.9 }); C2(svg, x + 498, y + 110, 40, '#2E1B55');
   [[x + 90, y + 260], [x + 360, y + 60], [x + 600, y + 80]].forEach(([a, b], i) => star(a, b, 0.7 + (i % 2) * 0.3, C.goldHi));
   [[x + 410, y + 400, 120, '#4F3487'], [x + 530, y + 340, 110, '#6544A6'], [x + 640, y + 280, 140, '#7B58C2']].forEach(([a, b, ww, c]) => el('rect', { x: a, y: b, width: ww, height: 400, rx: 14, fill: c }));
-  (o.kisi === 'adam' ? adam : kadin)(x + 195, y + 190, 1.18);
+  (o.kisi === 'adam' ? adam : kadin)(x + 195, y + 190, 1.18, o);
   kedi(x + 470, y + 312, 1);
   tilki(x + 585, y + 250, 1);
   baykus(x + 690, y + 194, 1.05);
