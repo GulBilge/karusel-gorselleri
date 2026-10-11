@@ -87,6 +87,18 @@ function chip(str, x, y, color = C.gold, fill = false) {
   svg.insertBefore(r, t);
   return w;
 }
+// Profil rozeti (kapakta): yuvarlak fotoğraf + altın halka + ad + unvan. profil.png motor/ klasöründe.
+function profil(x, y, d = 104) {
+  const id = 'pf' + sd(), r = d / 2, cx = x + r, cy = y + r;
+  const defs = svg.querySelector('defs') || el('defs');
+  const cp = el('clipPath', { id }, defs); el('circle', { cx, cy, r }, cp);
+  el('image', { href: 'profil.png', x, y, width: d, height: d, 'clip-path': `url(#${id})`, preserveAspectRatio: 'xMidYMid slice' });
+  el('circle', { cx, cy, r: r + 5, fill: 'none', stroke: C.gold, 'stroke-width': 3 });
+  el('circle', { cx, cy, r: r + 13, fill: 'none', stroke: C.gold, 'stroke-width': 1, opacity: 0.5 });
+  const tx = x + d + 40;
+  serif('Bilge Gül Koç', tx, cy - 4, { size: 44, weight: 700, color: C.ivory });
+  text('YAPAY ZEKA EĞİTMENİ', tx, cy + 38, { size: TS.label, weight: 700, color: C.gold, ls: 4 });
+}
 // Kart: koyu zemin, ince altın kenar, solda vurgu rengi şeridi
 function card(x, y, w, h, accent = C.gold) {
   el('rect', { x, y, width: w, height: h, rx: 20, fill: C.card, stroke: C.gold, 'stroke-opacity': 0.35, 'stroke-width': 1.5 });

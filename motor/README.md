@@ -7,6 +7,7 @@ Aşağıdaki eski "açık defter" kuralları yerine bu bölüm geçerlidir. Moto
 - Yazı: başlıklar Playfair Display (700, vurgu satırı italik 600, gold/fildişi), gövde Montserrat 500 (36 px, satır aralığı 1.45), etiket hapları Montserrat 700 (26 px, geniş harf aralığı), el yazısı (Caveat) yalnızca "kaydır →" gibi küçük altın notlarda.
 - Bileşenler: `chip()` etiket hapı, `card()` koyu kart + solda vurgu şeridi, `divider()` altın ayraç, `bullet()` elmas madde imi, `serif()` başlık. İllüstrasyonlar ince altın çizgi sanatı (`L` stili, düşük pürüz) + dolgu renkleri zümrüt/gold/pembe/mor.
 - Yerleşim kuralları aynı: imza sol altta (`footer()`), sayfa numarası sol kenar boşluğunda, sağ üst boş, metinler kenardan en az 110 px içeride, `UYARI` satırı kalmayana dek düzelt.
+- KAPAK PROFİL ROZETİ (Bilge'nin isteği, 11 Ekim 2026): her karusel kapağının en üstünde `profil(150, 124, 112)` çağrılır: yuvarlak profil fotoğrafı (`motor/profil.png`) + altın halka + yanında "Bilge Gül Koç" ve "YAPAY ZEKA EĞİTMENİ". Bunun dışında kapakta takipçi/gönderi sayısı vb. profil bilgisi gösterme. Etiket hapı (tarih) rozetin altına gelir. Diğer sayfalarda fotoğraf yok.
 - Örnek: `ornek-koyu-s1.js … ornek-koyu-s3.js` (11 Ekim "Claude ipucu" içeriğinin koyu hali). Değiştirme, kopyala.
 - Reels/video: aynı palet ve yazı tipleri (siyah zemin, gold çizgiler, zümrüt vurgu, pembe/mor ışıma); açık defter/kâğıt zemin kullanma.
 
