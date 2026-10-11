@@ -1,5 +1,5 @@
 async function build() {
-  await fontsReady(); paper('purple'); footer('1 / 3');
+  await fontsReady(); paper('purple'); footer('1 / 2');
   profil(150, 124, 112);
   chip('CLAUDE İPUCU · 11 EKİM 2026', 150, 292, C.gold);
 

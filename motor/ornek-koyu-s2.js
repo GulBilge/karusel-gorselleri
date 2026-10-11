@@ -1,23 +1,27 @@
+// Şema sayfası (2 / 2): haberi/ipucunu adım adım gösteren diyagram + dikkat notu + kaydet çağrısı. Detaylar caption'da.
 async function build() {
-  await fontsReady(); paper('pink'); footer('2 / 3');
-  serif('Nasıl yapılır?', 150, 220, { size: 84 });
-  divider(150, 520, 262);
-
-  function section(h, accent, items, y) {
-    const x = 150, w = 820, tx = x + 64, tw = w - 64 - 36;
-    let yy = y + 120;
-    const ends = items.map(it => { const y0 = yy; yy = body(it, tx, yy, { dry: true, width: tw }) + 6; return y0; });
-    const hgt = yy - y - 18;
-    card(x, y, w, hgt, accent);
-    text(h.toUpperCase(), x + 36, y + 58, { size: TS.label + 2, weight: 700, color: accent, ls: 4 });
-    items.forEach((it, i) => { bullet(x + 38, ends[i] - 12, accent); body(it, tx, ends[i], { width: tw }); });
-    return y + hgt + 26;
-  }
+  await fontsReady(); paper('pink'); footer('2 / 2');
+  serif('4 adımda hazır', 150, 215, { size: 84 });
+  divider(150, 520, 255);
+  const steps = [['Ders notunu yapıştır', C.emerald], ['Kitleyi ve süreyi yaz', C.gold], ['Üç sürüm iste', C.pink], ['Kendi sesinle düzelt', C.purple]];
   let y = 300;
-  y = section('Ne yazmalı?', C.emerald, ['Ders notunuzu sohbete yapıştırın.', 'Kitleyi yazın: seviye ve süre.', 'Üç ayrı sürüm isteyin.'], y);
-  y = section('Örnek istek', C.gold, ['“Bu notu başlangıç, orta ve ileri seviye için üç sade sürüme çevir.”'], y);
-  y = section('Dikkat!', C.pink, ['Öğrenci adı gibi kişisel bilgi yapıştırmayın.', 'Çıktıyı okuyup düzeltin; son söz sizin.'], y);
-  serif('Detaylar ve kaynaklar açıklamada', 560, y + 40, { size: 40, weight: 600, italic: true, color: C.goldHi, anchor: 'middle' });
+  steps.forEach(([s, c], i) => {
+    card(150, y, 820, 118, c);
+    el('circle', { cx: 236, cy: y + 59, r: 38, fill: 'none', stroke: c, 'stroke-width': 3 });
+    serif(String(i + 1), 236, y + 78, { size: 48, color: c, anchor: 'middle' });
+    serif(s, 304, y + 76, { size: 44, weight: 600, color: C.ivory });
+    if (i < 3) el('path', { d: `M550 ${y + 128} l12 14 l12 -14`, fill: 'none', stroke: C.gold, 'stroke-width': 3 });
+    y += 152;
+  });
+  // dikkat notu
+  card(150, y + 4, 820, 120, C.pink);
+  text('DİKKAT', 190, y + 52, { size: TS.label, weight: 700, color: C.pink, ls: 4 });
+  text('Kişisel bilgi yapıştırmayın, çıktıyı kontrol edin.', 190, y + 100, { size: 31, color: C.ivory });
+  // kaydet çağrısı
+  card(150, y + 148, 820, 92, C.emerald);
+  el('path', { d: `M190 ${y + 166} h28 v50 l-14 -11 l-14 11 z`, fill: C.gold });
+  serif('Kaydedin, meslektaşınıza gönderin.', 244, y + 208, { size: 36, weight: 600, italic: true, color: C.goldHi });
+  serif('Detaylar ve kaynaklar açıklamada', 560, y + 288, { size: 32, weight: 600, italic: true, color: C.muted, anchor: 'middle' });
   done();
 }
 build();

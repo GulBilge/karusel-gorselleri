@@ -9,6 +9,7 @@ Aşağıdaki eski "açık defter" kuralları yerine bu bölüm geçerlidir. Moto
 - Yerleşim kuralları aynı: imza sol altta (`footer()`), sayfa numarası sol kenar boşluğunda, sağ üst boş, metinler kenardan en az 110 px içeride, `UYARI` satırı kalmayana dek düzelt.
 - KAPAK PROFİL ROZETİ (Bilge'nin isteği, 11 Ekim 2026): her karusel kapağının en üstünde `profil(150, 124, 112)` çağrılır: yuvarlak profil fotoğrafı (`motor/profil.png`) + altın halka + yanında "Bilge Gül Koç" ve "YAPAY ZEKA EĞİTMENİ". Bunun dışında kapakta takipçi/gönderi sayısı vb. profil bilgisi gösterme. Etiket hapı (tarih) rozetin altına gelir. Diğer sayfalarda fotoğraf yok.
 - KAPAK İLLÜSTRASYONU (Bilge'nin isteği, 11 Ekim 2026): kapakta büyük, sıcak, masalsı karakter illüstrasyonu kullanılır (`illus-koyu.js`: `sahneKapak()`; `kadin()`, `kedi()`, `tilki()`, `baykus()` özgün karakterleri; kemerli pencere içinde). Hiçbir gerçek illüstratörün işini kopyalama; karakterler özgündür. Konuya göre sahneyi değiştir (kadın eğitmen + hayvan öğrenciler), logo/telifli karakter yok.
+- FORMAT: karusel 2 sayfa = 1 kapak (illüstrasyonlu) + 2 şema sayfası; ayrıntılar caption'a yazılır, ayrı detay sayfası yok. Örnekler: `ornek-koyu-s1.js` (kapak), `ornek-koyu-s2.js` (şema). `node shot.js 1 2`.
 - Kapak statiktir; animasyon istenmiyor (Bilge, 11 Ekim 2026).
 - Örnek: `ornek-koyu-s1.js … ornek-koyu-s3.js` (11 Ekim "Claude ipucu" içeriğinin koyu hali). Değiştirme, kopyala.
 - Reels/video: aynı palet ve yazı tipleri (siyah zemin, gold çizgiler, zümrüt vurgu, pembe/mor ışıma); açık defter/kâğıt zemin kullanma.
