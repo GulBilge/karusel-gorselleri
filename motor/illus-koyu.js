@@ -27,6 +27,26 @@ function kadin(x, y, s = 1) {
   E(gg, -92, 232, 20, 17, SK.skin); E(gg, 92, 214, 20, 17, SK.skin);
   return gg;
 }
+// Erkek uzman: kısa saçlı, sakallı, yuvarlak gözlüklü, zümrüt blazerli, elinde not kâğıdı
+function adam(x, y, s = 1) {
+  const gg = g({ transform: `translate(${x} ${y}) scale(${s})` });
+  P(gg, 'M-140 190 Q-130 108 -60 98 L60 98 Q130 108 140 190 L150 330 L-150 330 Z', '#0F7F63');
+  E(gg, 0, 92, 26, 30, '#E9B992');
+  P(gg, 'M-36 98 L0 176 L36 98 Z', C.ivory); P(gg, 'M0 122 l-9 14 l9 46 l9 -46 z', C.gold);
+  E(gg, -58, 12, 9, 15, '#E9B992'); E(gg, 58, 12, 9, 15, '#E9B992');
+  E(gg, 0, 8, 56, 66, SK.skin);
+  P(gg, 'M-62 -4 Q-72 -80 0 -82 Q72 -80 62 -4 Q54 -46 0 -50 Q-54 -46 -62 -4 Z', '#2B1B2E');
+  P(gg, 'M-52 28 Q-46 84 0 86 Q46 84 52 28 Q40 62 0 66 Q-40 62 -52 28 Z', '#3A2A33');
+  face(gg, 22, 2, true);
+  P(gg, 'M-30 -14 q8 -8 16 -2 M14 -16 q8 -6 16 2', 'none', { stroke: '#2B1B2E', 'stroke-width': 4, 'stroke-linecap': 'round' });
+  P(gg, 'M-16 40 Q0 54 16 40', 'none', { stroke: '#F3C7A6', 'stroke-width': 4, 'stroke-linecap': 'round' });
+  const pg = g({ transform: 'translate(0 232) rotate(-4)' }, gg);
+  el('rect', { x: -92, y: -64, width: 184, height: 128, rx: 10, fill: C.ivory }, pg);
+  el('rect', { x: -92, y: -64, width: 184, height: 26, rx: 10, fill: C.purple }, pg);
+  [-16, 8, 32].forEach((yy, i) => el('line', { x1: -68, y1: yy, x2: 52 - i * 14, y2: yy, stroke: '#B9B1A2', 'stroke-width': 4, 'stroke-linecap': 'round' }, pg));
+  E(gg, -92, 242, 20, 17, '#E9B992'); E(gg, 92, 224, 20, 17, '#E9B992');
+  return gg;
+}
 function kedi(x, y, s = 1) {
   const gg = g({ transform: `translate(${x} ${y}) scale(${s})` });
   P(gg, 'M24 70 Q76 70 66 20 Q64 6 54 12', 'none', { stroke: SK.ginger, 'stroke-width': 14, 'stroke-linecap': 'round' });
@@ -63,7 +83,8 @@ function baykus(x, y, s = 1) {
   return gg;
 }
 // Kemerli pencere + sahne: kadın eğitmen ve üç basamakta üç hayvan öğrenci (temel · orta · ileri)
-function sahneKapak(x, y, w, h) {
+// o.kisi: 'kadin' (varsayılan) | 'adam' → ana karakter; kadın ve erkek karakterleri dönüşümlü kullan.
+function sahneKapak(x, y, w, h, o = {}) {
   const id = 'arch' + sd(), bg = 'abg' + sd(), defs = svg.querySelector('defs') || el('defs');
   const lg = el('linearGradient', { id: bg, x1: 0, y1: 0, x2: 0.8, y2: 1 }, defs);
   el('stop', { offset: '0%', 'stop-color': '#2E1B55' }, lg); el('stop', { offset: '100%', 'stop-color': '#0B4A3C' }, lg);
@@ -75,7 +96,7 @@ function sahneKapak(x, y, w, h) {
   C2(svg, x + 480, y + 120, 44, C.goldHi, { opacity: 0.9 }); C2(svg, x + 498, y + 110, 40, '#2E1B55');
   [[x + 90, y + 260], [x + 360, y + 60], [x + 600, y + 80]].forEach(([a, b], i) => star(a, b, 0.7 + (i % 2) * 0.3, C.goldHi));
   [[x + 410, y + 400, 120, '#4F3487'], [x + 530, y + 340, 110, '#6544A6'], [x + 640, y + 280, 140, '#7B58C2']].forEach(([a, b, ww, c]) => el('rect', { x: a, y: b, width: ww, height: 400, rx: 14, fill: c }));
-  kadin(x + 195, y + 190, 1.18);
+  (o.kisi === 'adam' ? adam : kadin)(x + 195, y + 190, 1.18);
   kedi(x + 470, y + 312, 1);
   tilki(x + 585, y + 250, 1);
   baykus(x + 690, y + 194, 1.05);
