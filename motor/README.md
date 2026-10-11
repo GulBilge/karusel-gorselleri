@@ -1,4 +1,16 @@
 # Karusel motoru (statik PNG, 1080x1350)
+
+## MARKA STİLİ: KOYU PREMİUM (Bilge'nin isteği, 11 Ekim 2026) — bundan sonraki bütün karusel, Reels ve videolarda geçerli
+Aşağıdaki eski "açık defter" kuralları yerine bu bölüm geçerlidir. Motor varsayılan olarak koyu temayı çizer (`lib-koyu.js` + `tpl-koyu.html`); eski tema yalnızca `node shot.js 1 2 3 --acik` ile.
+- Renkler (`C`): siyah zemin `#09090B`, kart `#131316`, gold `#D8B45A` (açık `#F0D58A`), zümrüt yeşili `#12A67C` (koyu `#0A5F49`), vurgu: pembe `#EC5B97` ya da mor `#9B6CFF` (sayfa başına biri; `paper('pink'|'purple')`). Metin: fildişi `#F4EFE4`, soluk `#A9A39A`.
+- Zemin: siyah + sol altta zümrüt ışıma + sağ üstte pembe/mor ışıma + çift ince altın çerçeve ve köşe elmasları. Krem defter, spiral, şeftali/nane bantları ve rough.js "karalama" görünümü KULLANMA.
+- Yazı: başlıklar Playfair Display (700, vurgu satırı italik 600, gold/fildişi), gövde Montserrat 500 (36 px, satır aralığı 1.45), etiket hapları Montserrat 700 (26 px, geniş harf aralığı), el yazısı (Caveat) yalnızca "kaydır →" gibi küçük altın notlarda.
+- Bileşenler: `chip()` etiket hapı, `card()` koyu kart + solda vurgu şeridi, `divider()` altın ayraç, `bullet()` elmas madde imi, `serif()` başlık. İllüstrasyonlar ince altın çizgi sanatı (`L` stili, düşük pürüz) + dolgu renkleri zümrüt/gold/pembe/mor.
+- Yerleşim kuralları aynı: imza sol altta (`footer()`), sayfa numarası sol kenar boşluğunda, sağ üst boş, metinler kenardan en az 110 px içeride, `UYARI` satırı kalmayana dek düzelt.
+- Örnek: `ornek-koyu-s1.js … ornek-koyu-s3.js` (11 Ekim "Claude ipucu" içeriğinin koyu hali). Değiştirme, kopyala.
+- Reels/video: aynı palet ve yazı tipleri (siyah zemin, gold çizgiler, zümrüt vurgu, pembe/mor ışıma); açık defter/kâğıt zemin kullanma.
+
+## (ESKİ) Açık defter teması — yalnızca `--acik` ile
 - `npm install` → `cp ornek-s1.js s1.js` (vb.) → içerikleri değiştir → `node shot.js 1 2 3` (4. sayfa varsa `1 2 3 4`) → `out/01.png`...
 - `ornek-s1..s4.js`: 8 Ekim 2026 "Claude'un kuralları değişiyor" karuseli. Tasarım dili ve yazı ölçeği örneği; değiştirme, kopyala.
 - Kurallar: krem çizgili defter, el yazısı (Caveat) başlık ve gövde, Montserrat yalnızca bant etiketleri, şeftali/nane/pembe bantlar, botanik dallar.

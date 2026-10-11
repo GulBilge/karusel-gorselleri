@@ -1,4 +1,5 @@
-// Kullanım: node shot.js 1 2 3 4  -> s1.js, s2.js... dosyalarını out/01.png... olarak çizer; UYARI satırlarını düzeltin
+// Kullanım: node shot.js 1 2 3 4  (varsayılan koyu tema: tpl-koyu.html + lib-koyu.js; eski açık defter teması için --acik)
+// Eski kullanım: node shot.js 1 2 3 4  -> s1.js, s2.js... dosyalarını out/01.png... olarak çizer; UYARI satırlarını düzeltin
 let pw;
 try { pw = require('/opt/npm-tools/node_modules/playwright'); } catch (e) { pw = require('playwright'); }
 const { chromium } = pw;
@@ -11,8 +12,9 @@ const fs = require('fs'), path = require('path');
   pg.on('pageerror', e => console.log('ERR', e.message));
   pg.on('console', m => console.log('  ', m.text()));
   fs.mkdirSync('out', { recursive: true });
-  for (const n of process.argv.slice(2)) {
-    fs.writeFileSync(`slide${n}.html`, fs.readFileSync('tpl.html', 'utf8').replace('SLIDE', `s${n}.js`));
+  const acik = process.argv.includes('--acik'), tpl = acik ? 'tpl.html' : 'tpl-koyu.html';
+  for (const n of process.argv.slice(2).filter(a => !a.startsWith('--'))) {
+    fs.writeFileSync(`slide${n}.html`, fs.readFileSync(tpl, 'utf8').replace('SLIDE', `s${n}.js`));
     await pg.goto('file://' + path.resolve(`slide${n}.html`));
     await pg.waitForFunction('window.READY === true', null, { timeout: 20000 });
     await pg.screenshot({ path: `out/${String(n).padStart(2, '0')}.png` });
