@@ -9,7 +9,7 @@ async function build() {
 
   sahneTek(170, 620, 780, 490, { figur: 'kadin', tip: 'sacli', zemin: 'zumrut', halo: 'gunes', olcek: 1.7, dy: 90,
     ek: (cx, cy, k) => {
-      [['Docs', '#4C8DF6', k.x + 90, k.y + 150], ['Sheets', C.emerald, k.x + k.w - 250, k.y + 120], ['Slides', C.gold, k.x + k.w - 230, k.y + 300]].forEach(([n, c, px, py], i) => {
+      [['Docs', '#4C8DF6', k.x + 90, k.y + 150], ['Sheets', C.emerald, k.x + k.w - 250, k.y + 120], ['Slides', C.gold, k.x + k.w / 2 - 80, k.y + 40]].forEach(([n, c, px, py], i) => {
         const gg = g({ transform: `rotate(${[-8, 7, -5][i]} ${px + 80} ${py + 50})` });
         el('rect', { x: px, y: py, width: 160, height: 100, rx: 16, fill: '#131316', stroke: c, 'stroke-width': 4 }, gg);
         el('rect', { x: px, y: py, width: 160, height: 22, rx: 11, fill: c }, gg);
