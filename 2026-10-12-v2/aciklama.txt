@@ -1,0 +1,31 @@
+KAÇIRDIYSANIZ: Claude artık Google Docs, Sheets ve Slides içinde çalışıyor
+
+Anthropic, 6 Ekim 2026'da Claude'u Google Dokümanlar (Docs), E-Tablolar (Sheets) ve Slaytlar (Slides) içine getiren bir eklenti (add-on) ve bağlayıcı (connector) duyurdu. İkisi de beta (deneme) aşamasında.
+
+Ne değişti?
+• Claude for Google Workspace eklentisi: Claude, dosyanızın yanında bir kenar çubuğunda açılıyor; açık dosyayı ve seçtiğiniz bölümü görebiliyor.
+• Docs: Bir cümleyi düzeltebiliyor, başlığı yeniden biçimlendirebiliyor; büyük yeniden yazımlar için uygulayıp reddedebileceğiniz öneri kartları sunuyor.
+• Sheets: Formül yazabiliyor, pivot tablo ve grafik oluşturabiliyor, yeni sekme ekleyebiliyor.
+• Slides: Sunumunuzun düzenlerini ve temasını kullanarak slayt hazırlayabiliyor; üst üste binen veya okunması zor öğeleri işaretleyebiliyor.
+• Varsayılan "Düzenlemeden önce sor" modunda her değişiklik için onay kartı çıkıyor.
+• Bağlayıcılar: Claude sohbetinden Google dosyası oluşturup düzenlemenizi sağlıyor. Claude'un erişimi mevcut Google paylaşım izinlerinizle aynı.
+
+Kimler yararlanabilir?
+• Eklenti, tüm ücretli Claude planlarında herkese açık beta olarak sunuluyor.
+• Team ve Enterprise planlarında bağlayıcıları önce bir sahibin (owner) açması gerekiyor.
+
+Nasıl kurulur?
+• Eklentiyi Google Workspace Marketplace'ten yükleyin, bir dosyayı açıp Extensions > Claude > Open Claude yolunu izleyin.
+
+Dikkat edilmesi gerekenler
+• İki özellik de beta; davranışı değişebilir.
+• Claude hata yapabilir; özellikle formül ve rakamları paylaşmadan önce kontrol edin.
+• Türkiye'de kullanılabilirlik: Türkiye, Claude'un desteklenen ülkeleri arasında. Eklentinin ülkeye özel kullanılabilirliği duyuruda ayrıca belirtilmiyor.
+
+Kaynaklar
+claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides
+anthropic.com/supported-countries
+
+Kaydedin, meslektaşınıza gönderin.
+
+#teknikbilgekoc #gunlukyapayzekahaberi
