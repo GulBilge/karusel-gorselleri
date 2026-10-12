@@ -1,0 +1,24 @@
+Claude ipucu: Toplantı notunu e-postaya ve görev listesine çevirin
+
+Bugün yeni bir duyuru yok; onun yerine işinize yarayacak sade bir ipucu paylaşıyorum. Toplantıdan sonra elinizdeki dağınık notları Claude ile hem bir özet e-postasına hem de net bir görev listesine dönüştürebilirsiniz.
+
+Nasıl yapılır?
+• Toplantı notunuzu sohbete yapıştırın.
+• Özeti kime yazacağınızı söyleyin (ekip, müşteri, yönetici).
+• Kısa bir özet ve "kim, ne yapacak, ne zaman" biçiminde görev listesi isteyin.
+• Çıktıyı okuyup kendi sesinizle düzeltin ve gönderin.
+
+Örnek istek:
+"Bu toplantı notundan ekibe gidecek kısa bir özet e-posta ve kim-ne-ne zaman başlıklı bir görev listesi hazırla."
+
+Dikkat edilmesi gerekenler
+• Müşteri bilgisi, kişisel veri gibi gizli bilgileri yapıştırmadan önce çıkarın.
+• Claude hata yapabilir; tarihleri ve görev sahiplerini göndermeden önce mutlaka kontrol edin. Son söz sizin.
+• Türkiye, Claude'un desteklenen ülkeleri arasında; Claude'u claude.ai üzerinden kullanabilirsiniz.
+
+Kaynaklar
+anthropic.com/supported-countries
+
+Kaydedin, meslektaşınıza gönderin.
+
+#teknikbilgekoc #gunlukyapayzekahaberi
