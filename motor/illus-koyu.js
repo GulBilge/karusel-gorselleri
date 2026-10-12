@@ -245,7 +245,7 @@ function sahneTek(x, y, w, h, o = {}) {
   const s = o.olcek || 2.4, f = o.figur || 'kadin';
   if (f === 'kadin') kadin(cx, cy - 20, s, o); else if (f === 'adam') adam(cx, cy - 20, s * 0.9, o);
   else ({ kedi, tilki, baykus })[f](cx, cy, s);
-  [[x + 90, y + 300], [x + w - 100, y + 250], [x + w - 190, y + 90], [x + 200, y + 70]].forEach(([a, b], i) => star(a, b, 0.8 + (i % 2) * 0.4, C.goldHi));
+  (o.yildizlar || [[x + 90, y + 300], [x + w - 100, y + 250], [x + w - 190, y + 90], [x + 200, y + 70]]).forEach(([a, b], i) => star(a, b, 0.8 + (i % 2) * 0.4, C.goldHi));
   if (o.ek) o.ek(cx, cy, { x, y, w, h });
   dal(x + 20, y + h + 10, 190, 12, 1); dal(x + w - 20, y + h + 10, 170, -14, -1, '#17B488');
   const gg = g({ 'clip-path': `url(#${id})` });
