@@ -1,0 +1,24 @@
+Sesli yapay zeka henüz "ChatGPT anını" yaşamadı
+
+TechCrunch'ın 11 Ekim 2026 tarihli haberine göre sektör yöneticileri, sesli yapay zekaya milyarlarca dolar yatırım akmasına rağmen bu alanın henüz "ChatGPT anına" (herkesin birden benimsediği dönüm noktasına) ulaşmadığını söylüyor.
+
+Yöneticilerin öne çıkan görüşleri
+• Aynı anda hem dinleyip hem konuşabilen (full-duplex) modeller artık var. Sıradaki sorun hız: yapay zekanın cevap vermeden önce akıl yürütmesinin çok hızlı olması gerekiyor (PolyAI teknoloji müdürü Shawn Wen).
+• Müşteri hizmetleri asistanı robot gibi konuşmamalı. Ses yeterince iyi olduğunda arayanlar ilk iki üç konuşma turunda güven kazanabiliyor (Shawn Wen).
+• Konuşmayı yazıya çeviren sistemler (ASR) önemli anahtar kelimeleri kaçırabiliyor; bu hata sonraki adımları bozuyor (Shawn Wen, Otter pazarlama müdürü Alex Gay).
+• İşletmeler arayan kişiye yapay zeka ile konuştuğunu açıkça belirtmeli (Shawn Wen). Otter da kayıt yapıldığında tüm katılımcıları bilgilendirmek istiyor (Alex Gay).
+
+Sizin için anlamı
+• Sesli asistan düşünüyorsanız hız, doğal ses ve doğru yazıya çevirme kalitesini mutlaka deneyerek test edin.
+• Müşterilerinize yapay zeka ile konuştuklarını açıkça söyleyin; şeffaflık güveni artırıyor.
+
+Dikkat edilmesi gerekenler
+• Bunlar yöneticilerin konferanstaki görüşleri; kesin bir ürün duyurusu ya da ölçüm sonucu değil.
+• Haberi doğrudan TechCrunch'tan aktarıyorum; konuşmaları kendim doğrulayamadım.
+
+Kaynaklar
+techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet
+
+Kaydedin, meslektaşınıza gönderin.
+
+#teknikbilgekoc #gunlukyapayzekahaberi
