@@ -1,7 +1,7 @@
 // Şema sayfası (2 / 2): haberi/ipucunu adım adım gösteren diyagram + dikkat notu + kaydet çağrısı. Detaylar caption'da.
 async function build() {
   await fontsReady(); paper('pink'); footer('2 / 2');
-  serif('Kurmadan önce bakın', 150, 215, { size: 84 });
+  serif('Kurmadan önce bakın', 150, 215, { size: 72 });
   divider(150, 520, 255);
   const steps = [['Cevap geç mi geliyor?', C.emerald], ['İsim, rakam yanlış mı?', C.gold], ['Yapay zekâ olduğunu söylüyor mu?', C.pink], ['Önce kendiniz arayıp deneyin', C.purple]];
   let y = 300;
