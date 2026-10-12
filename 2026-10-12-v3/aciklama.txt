@@ -6,6 +6,8 @@ Telefonla gelen müşteri aramalarını yapay zekanın karşıladığı "sesli a
 • Yanlış anlama: Konuşmayı yazıya çeviren sistemler önemli kelimeleri kaçırabiliyor. Bu hata, sonraki adımların hepsini bozabiliyor.
 • Şeffaflık: Arayan kişiye yapay zeka ile konuştuğunu açıkça söylemek gerekiyor. Yöneticilere göre güven bu şekilde kazanılıyor.
 
+Örneğin (varsayımsal): Kliniğinizin randevu hattını arayan bir hasta adını söylüyor; asistan adı yanlış anlıyor ya da uzun süre susuyor ve hasta telefonu kapatıyor. Üç zayıf nokta tam da bu tür anları anlatıyor.
+
 İyi haber: Ses yeterince doğal olduğunda, arayanların ilk iki üç konuşma turunda güven kazanabildiği belirtiliyor (PolyAI teknoloji müdürü Shawn Wen).
 
 Bugün ne yapabilirsiniz?
