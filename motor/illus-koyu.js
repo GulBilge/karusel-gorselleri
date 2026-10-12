@@ -193,24 +193,29 @@ function dal(x, y, len, rot, flip = 1, color = C.emerald) {
 }
 // Kemerli pencere + sahne: kadın eğitmen ve üç basamakta üç hayvan öğrenci (temel · orta · ileri)
 // o.kisi: 'kadin' (varsayılan, ilk tercih) | 'adam' (yalnızca içerik erkek karaktere özellikle uygunsa). Kadın için o.tip: 'basortulu' | 'sacli' | 'kiz' | 'anne' | 'yasli' (+ o.basortu).
+// Çeşitlilik (Bilge: "hep aynı görsel olmasın"): o.zemin 'mor'|'zumrut'|'bordo'|'lacivert'|'altin', o.kaleydoskop 'sol'|'sag'|'yok',
+// o.sutunlar true|false (false: hayvanlar zeminde), o.hayvanlar ['kedi','tilki','baykus'] alt kümesi/sırası (boş dizi = hayvansız, karakter büyür), o.ay true|false, o.kisi/o.tip karakter.
 function sahneKapak(x, y, w, h, o = {}) {
   const id = 'arch' + sd(), bg = 'abg' + sd(), defs = svg.querySelector('defs') || el('defs');
+  const ZM = { mor: ['#2E1B55', '#0B4A3C'], zumrut: ['#0B4A3C', '#2E1B55'], bordo: ['#4A1230', '#1B2A55'], lacivert: ['#12275A', '#4A1B55'], altin: ['#5A3F12', '#2E1B55'] };
+  const zc = ZM[o.zemin] || ZM.mor;
   const lg = el('linearGradient', { id: bg, x1: 0, y1: 0, x2: 0.8, y2: 1 }, defs);
-  el('stop', { offset: '0%', 'stop-color': '#2E1B55' }, lg); el('stop', { offset: '100%', 'stop-color': '#0B4A3C' }, lg);
+  el('stop', { offset: '0%', 'stop-color': zc[0] }, lg); el('stop', { offset: '100%', 'stop-color': zc[1] }, lg);
   const R = 220, d = `M${x} ${y + h} L${x} ${y + R} A${R} ${R} 0 0 1 ${x + R} ${y} L${x + w - R} ${y} A${R} ${R} 0 0 1 ${x + w} ${y + R} L${x + w} ${y + h} Z`;
   el('path', { d }, el('clipPath', { id }, defs));
   const n0 = svg.childNodes.length;
   el('path', { d, fill: `url(#${bg})` });
   desenler();
-  kaleydoskop(svg, x + 250, y + 260, 300, 0.78);
-  C2(svg, x + 250, y + 300, 150, '#1B0F24', { opacity: 0.28, stroke: 'none' });
-  C2(svg, x + 480, y + 120, 44, C.goldHi, { opacity: 0.95 }); C2(svg, x + 498, y + 110, 40, '#2E1B55', { stroke: 'none' });
+  const ks = o.kaleydoskop || 'sol', ksx = ks === 'sag' ? x + w - 250 : x + 250;
+  if (ks !== 'yok') { kaleydoskop(svg, ksx, y + 260, 300, 0.78); C2(svg, ksx, y + 300, 150, '#1B0F24', { opacity: 0.28, stroke: 'none' }); }
+  if (o.ay !== false) { const ax = ks === 'sag' ? x + 120 : x + 480; C2(svg, ax, y + 120, 44, C.goldHi, { opacity: 0.95 }); C2(svg, ax + 18, y + 110, 40, zc[0], { stroke: 'none' }); }
   [[x + 90, y + 260], [x + 360, y + 60], [x + 600, y + 80]].forEach(([a, b], i) => star(a, b, 0.7 + (i % 2) * 0.3, C.goldHi));
-  [[x + 410, y + 400, 120, '#4F3487'], [x + 530, y + 340, 110, '#6544A6'], [x + 640, y + 280, 140, '#7B58C2']].forEach(([a, b, ww, c]) => { el('rect', { x: a, y: b, width: ww, height: 400, rx: 14, fill: c, stroke: OUT, 'stroke-width': 2.4 }); el('rect', { x: a, y: b, width: ww, height: 400, rx: 14, fill: 'url(#dsn-mozaik)' }); el('rect', { x: a + 6, y: b + 6, width: ww - 12, height: 12, rx: 6, fill: C.goldHi, opacity: 0.5 }); });
-  (o.kisi === 'adam' ? adam : kadin)(x + 195, y + 190, 1.18, o);
-  kedi(x + 470, y + 312, 1);
-  tilki(x + 585, y + 250, 1);
-  baykus(x + 690, y + 194, 1.05);
+  const sut = o.sutunlar !== false, hay = o.hayvanlar || ['kedi', 'tilki', 'baykus'];
+  if (sut) [[x + 410, y + 400, 120, '#4F3487'], [x + 530, y + 340, 110, '#6544A6'], [x + 640, y + 280, 140, '#7B58C2']].forEach(([a, b, ww, c]) => { el('rect', { x: a, y: b, width: ww, height: 400, rx: 14, fill: c, stroke: OUT, 'stroke-width': 2.4 }); el('rect', { x: a, y: b, width: ww, height: 400, rx: 14, fill: 'url(#dsn-mozaik)' }); el('rect', { x: a + 6, y: b + 6, width: ww - 12, height: 12, rx: 6, fill: C.goldHi, opacity: 0.5 }); });
+  const k = o.kisi === 'adam' ? adam : kadin, kx = hay.length ? (ks === 'sag' ? x + 250 : x + 195) : x + w / 2 - 40;
+  k(kx, y + 190, hay.length ? 1.18 : 1.3, o);
+  const POS = sut ? { kedi: [470, 312, 1], tilki: [585, 250, 1], baykus: [690, 194, 1.05] } : { kedi: [500, 430, 1.1], tilki: [610, 400, 1.15], baykus: [700, 330, 1.1] };
+  hay.forEach(n => { const p = POS[n]; if (p) ({ kedi, tilki, baykus })[n](x + p[0], y + p[1], p[2]); });
   star(x + 470, y + 232, 0.9);
   star(x + 565, y + 150, 0.9); star(x + 605, y + 138, 0.9);
   star(x + 650, y + 96, 0.9); star(x + 690, y + 84, 0.9); star(x + 730, y + 96, 0.9);
