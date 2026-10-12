@@ -1,11 +1,11 @@
 async function build() {
   await fontsReady(); paper('purple'); footer('1 / 2');
   profil(150, 124, 112);
-  chip('SESLİ YAPAY ZEKA · 11 EKİM 2026', 150, 292, C.gold);
+  chip('SESLİ ASİSTAN · 11 EKİM 2026', 150, 292, C.gold);
 
-  serif('Sesli yapay zeka', 150, 410, { size: 84, color: C.ivory });
-  serif('henüz ChatGPT', 150, 496, { size: 84, color: C.goldHi });
-  serif('anını yaşamadı', 150, 582, { size: 84, color: C.ivory, italic: true, weight: 600 });
+  serif('Aramaları yapay zeka', 150, 410, { size: 80, color: C.ivory });
+  serif('karşılasa müşteri', 150, 494, { size: 80, color: C.goldHi });
+  serif('fark eder mi?', 150, 578, { size: 80, color: C.ivory, italic: true, weight: 600 });
 
   sahneTek(170, 620, 780, 490, { figur: 'kadin', tip: 'basortulu', zemin: 'lacivert', halo: 'kaleydoskop', olcek: 1.7, dy: 90,
     ek: (cx, cy) => {
@@ -18,8 +18,8 @@ async function build() {
     } });
 
   card(150, 1136, 820, 112, C.pink);
-  serif('Müşteriniz aradığında', 190, 1190, { size: 38, weight: 600, italic: true, color: C.ivory });
-  serif('karşısında robot mu var?', 190, 1236, { size: 38, weight: 600, italic: true, color: C.goldHi });
+  serif('Sektör yöneticileri anlatıyor:', 190, 1190, { size: 38, weight: 600, italic: true, color: C.ivory });
+  serif('sesli asistanın 3 zayıf noktası var', 190, 1236, { size: 38, weight: 600, italic: true, color: C.goldHi });
   text('kaydır →', 950, 1318, { size: 52, font: 'Caveat', weight: 700, color: C.gold, anchor: 'end' }).dataset.free = 1;
   done();
 }

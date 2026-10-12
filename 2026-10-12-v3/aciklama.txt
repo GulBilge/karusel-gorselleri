@@ -1,20 +1,18 @@
-Sesli yapay zeka henüz "ChatGPT anını" yaşamadı
+Aramaları yapay zeka karşılasa, müşteri fark eder mi?
 
-TechCrunch'ın 11 Ekim 2026 tarihli haberine göre sektör yöneticileri, sesli yapay zekaya milyarlarca dolar yatırım akmasına rağmen bu alanın henüz "ChatGPT anına" (herkesin birden benimsediği dönüm noktasına) ulaşmadığını söylüyor.
+Telefonla gelen müşteri aramalarını yapay zekanın karşıladığı "sesli asistanlar" hızla yaygınlaşıyor. TechCrunch'ın 11 Ekim 2026 tarihli haberine göre sektör yöneticileri, bu teknolojinin henüz herkesin hemen benimsediği bir noktaya gelmediğini söylüyor. Nedenleri, sizin de kendi asistanınızı kurarken dikkat edebileceğiniz üç zayıf nokta:
 
-Yöneticilerin öne çıkan görüşleri
-• Aynı anda hem dinleyip hem konuşabilen (full-duplex) modeller artık var. Sıradaki sorun hız: yapay zekanın cevap vermeden önce akıl yürütmesinin çok hızlı olması gerekiyor (PolyAI teknoloji müdürü Shawn Wen).
-• Müşteri hizmetleri asistanı robot gibi konuşmamalı. Ses yeterince iyi olduğunda arayanlar ilk iki üç konuşma turunda güven kazanabiliyor (Shawn Wen).
-• Konuşmayı yazıya çeviren sistemler (ASR) önemli anahtar kelimeleri kaçırabiliyor; bu hata sonraki adımları bozuyor (Shawn Wen, Otter pazarlama müdürü Alex Gay).
-• İşletmeler arayan kişiye yapay zeka ile konuştuğunu açıkça belirtmeli (Shawn Wen). Otter da kayıt yapıldığında tüm katılımcıları bilgilendirmek istiyor (Alex Gay).
+• Cevap gecikmesi: Yapay zeka cevap vermeden önce düşünüyor ve bu bekleme konuşmayı doğal olmaktan çıkarıyor. Yöneticilere göre sıradaki asıl iş bu süreyi kısaltmak.
+• Yanlış anlama: Konuşmayı yazıya çeviren sistemler önemli kelimeleri kaçırabiliyor. Bu hata, sonraki adımların hepsini bozabiliyor.
+• Şeffaflık: Arayan kişiye yapay zeka ile konuştuğunu açıkça söylemek gerekiyor. Yöneticilere göre güven bu şekilde kazanılıyor.
 
-Sizin için anlamı
-• Sesli asistan düşünüyorsanız hız, doğal ses ve doğru yazıya çevirme kalitesini mutlaka deneyerek test edin.
-• Müşterilerinize yapay zeka ile konuştuklarını açıkça söyleyin; şeffaflık güveni artırıyor.
+İyi haber: Ses yeterince doğal olduğunda, arayanların ilk iki üç konuşma turunda güven kazanabildiği belirtiliyor (PolyAI teknoloji müdürü Shawn Wen).
 
-Dikkat edilmesi gerekenler
-• Bunlar yöneticilerin konferanstaki görüşleri; kesin bir ürün duyurusu ya da ölçüm sonucu değil.
-• Haberi doğrudan TechCrunch'tan aktarıyorum; konuşmaları kendim doğrulayamadım.
+Bugün ne yapabilirsiniz?
+• Bir sesli asistan kullanıyor ya da düşünüyorsanız, önce kendiniz arayıp deneyin.
+• Cevap geç mi geliyor, isim ve rakamları doğru anlıyor mu, yapay zeka olduğunu söylüyor mu, bunlara bakın.
+
+Dikkat: Bunlar yöneticilerin konferanstaki görüşleri; kesin bir ölçüm ya da ürün duyurusu değil. Haberi TechCrunch'tan aktarıyorum, konuşmaları kendim doğrulayamadım.
 
 Kaynaklar
 techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet
