@@ -224,3 +224,31 @@ function sahneKapak(x, y, w, h, o = {}) {
   [...svg.childNodes].slice(n0, -1).forEach(n => gg.appendChild(n));
   el('path', { d, fill: 'none', stroke: C.gold, 'stroke-width': 3 });
 }
+
+// DURDURUCU KANCA (Bilge, 12 Ekim 2026): tek büyük figür (yüz ya da hayvan) + konuya uygun aksesuar. Her gün farklı figür, zemin, ifade ve aksesuar.
+// o.figur: 'kadin'|'adam'|'kedi'|'tilki'|'baykus'; o.tip/o.basortu (kadin); o.zemin (sahneKapak ile aynı); o.olcek; o.dy; o.halo: 'kaleydoskop'|'gunes'|'yok';
+// o.ek(cx, cy, ctx): konuya özel aksesuarı çizen geri çağrı (ör. ekran, grafik, ampul, kalkan); ctx = { x, y, w, h } kemer kutusu.
+function sahneTek(x, y, w, h, o = {}) {
+  const id = 'arch' + sd(), bg = 'abg' + sd(), defs = svg.querySelector('defs') || el('defs');
+  const ZM = { mor: ['#2E1B55', '#0B4A3C'], zumrut: ['#0B4A3C', '#2E1B55'], bordo: ['#4A1230', '#1B2A55'], lacivert: ['#12275A', '#4A1B55'], altin: ['#5A3F12', '#2E1B55'] };
+  const zc = ZM[o.zemin] || ZM.mor;
+  const lg = el('linearGradient', { id: bg, x1: 0, y1: 0, x2: 0.8, y2: 1 }, defs);
+  el('stop', { offset: '0%', 'stop-color': zc[0] }, lg); el('stop', { offset: '100%', 'stop-color': zc[1] }, lg);
+  const R = 260, d = `M${x} ${y + h} L${x} ${y + R} A${R} ${R} 0 0 1 ${x + R} ${y} L${x + w - R} ${y} A${R} ${R} 0 0 1 ${x + w} ${y + R} L${x + w} ${y + h} Z`;
+  el('path', { d }, el('clipPath', { id }, defs));
+  const n0 = svg.childNodes.length, cx = x + w / 2, cy = y + h * 0.5 + (o.dy || 0);
+  el('path', { d, fill: `url(#${bg})` });
+  desenler();
+  if (o.halo === 'gunes') { for (let i = 0; i < 16; i++) { const a = i * Math.PI / 8; P(svg, `M${cx} ${cy} L${cx + 700 * Math.cos(a - 0.07)} ${cy + 700 * Math.sin(a - 0.07)} L${cx + 700 * Math.cos(a + 0.07)} ${cy + 700 * Math.sin(a + 0.07)} Z`, i % 2 ? C.gold : C.pink, { opacity: 0.16, stroke: 'none' }); } }
+  else if (o.halo !== 'yok') kaleydoskop(svg, cx, cy, 330, 0.8);
+  C2(svg, cx, cy + 20, 190, '#1B0F24', { opacity: 0.3, stroke: 'none' });
+  const s = o.olcek || 2.4, f = o.figur || 'kadin';
+  if (f === 'kadin') kadin(cx, cy - 20, s, o); else if (f === 'adam') adam(cx, cy - 20, s * 0.9, o);
+  else ({ kedi, tilki, baykus })[f](cx, cy, s);
+  [[x + 90, y + 300], [x + w - 100, y + 250], [x + w - 190, y + 90], [x + 200, y + 70]].forEach(([a, b], i) => star(a, b, 0.8 + (i % 2) * 0.4, C.goldHi));
+  if (o.ek) o.ek(cx, cy, { x, y, w, h });
+  dal(x + 20, y + h + 10, 190, 12, 1); dal(x + w - 20, y + h + 10, 170, -14, -1, '#17B488');
+  const gg = g({ 'clip-path': `url(#${id})` });
+  [...svg.childNodes].slice(n0, -1).forEach(n => gg.appendChild(n));
+  el('path', { d, fill: 'none', stroke: C.gold, 'stroke-width': 3 });
+}
