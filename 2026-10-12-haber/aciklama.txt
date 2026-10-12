@@ -16,12 +16,10 @@ Kimler yararlanabilir?
 
 Nasıl kurulur?
 • Eklentiyi Google Workspace Marketplace'ten yükleyin, bir dosyayı açıp Extensions > Claude > Open Claude yolunu izleyin.
-• Yöneticiler eklentiyi Google Yönetici konsolundan alan adına veya seçili gruplara dağıtabilir.
 
 Dikkat edilmesi gerekenler
 • İki özellik de beta; davranışı değişebilir.
 • Claude hata yapabilir; özellikle formül ve rakamları paylaşmadan önce kontrol edin.
-• Hassas veya müşteri bilgisi içeren dosyalarda kurumunuzun veri politikasına uyun.
 • Türkiye'de kullanılabilirlik: Türkiye, Claude'un desteklenen ülkeleri arasında. Eklentinin ülkeye özel kullanılabilirliği duyuruda ayrıca belirtilmiyor.
 
 Kaynaklar

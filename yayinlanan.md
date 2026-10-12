@@ -9,3 +9,4 @@ Her sabah haber seçmeden önce bu dosyaya bakın; listedeki bir haberi tekrar s
 | 2026-10-10 | Belge/Slayt/Tasarım beta'dan çıktı + Claude Motion (8 Ekim 2026, KAÇIRDIYSANIZ) | https://claude.com/resources/articles/dashboards-and-motion | Otomatik yayın; klasör `2026-10-10/` |
 | 2026-10-11 | Claude ipucu: ders notunu 3 seviyeye uyarlama (haber değil) | https://www.anthropic.com/supported-countries | Otomatik yayın; klasör `2026-10-11/` |
 | 2026-10-12 | Claude ipucu: toplantı notunu e-postaya ve görev listesine çevirme (haber değil) | https://www.anthropic.com/supported-countries | Otomatik yayın; klasör `2026-10-12/` |
+| 2026-10-12 | Claude, Google Docs/Sheets/Slides eklentisi ve bağlayıcıları (6 Ekim 2026, KAÇIRDIYSANIZ) | https://claude.com/resources/articles/claude-now-works-in-google-docs-sheets-and-slides | Bilge isteğiyle yayınlandı; klasör `2026-10-12-haber/`; ipucu gönderisi arşivlenecek |
