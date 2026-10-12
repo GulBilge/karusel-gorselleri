@@ -1,0 +1,24 @@
+Aramaları yapay zeka karşılasa, müşteri fark eder mi?
+
+Telefonla gelen müşteri aramalarını yapay zekanın karşıladığı "sesli asistanlar" hızla yaygınlaşıyor. TechCrunch'ın 11 Ekim 2026 tarihli haberine göre sektör yöneticileri, bu teknolojinin henüz herkesin hemen benimsediği bir noktaya gelmediğini söylüyor. Nedenleri, sizin de kendi asistanınızı kurarken dikkat edebileceğiniz üç zayıf nokta:
+
+• Cevap gecikmesi: Yapay zeka cevap vermeden önce düşünüyor ve bu bekleme konuşmayı doğal olmaktan çıkarıyor. Yöneticilere göre sıradaki asıl iş bu süreyi kısaltmak.
+• Yanlış anlama: Konuşmayı yazıya çeviren sistemler önemli kelimeleri kaçırabiliyor. Bu hata, sonraki adımların hepsini bozabiliyor.
+• Şeffaflık: Arayan kişiye yapay zeka ile konuştuğunu açıkça söylemek gerekiyor. Yöneticilere göre güven bu şekilde kazanılıyor.
+
+Örneğin (varsayımsal): Kliniğinizin randevu hattını arayan bir hasta adını söylüyor; asistan adı yanlış anlıyor ya da uzun süre susuyor ve hasta telefonu kapatıyor. Üç zayıf nokta tam da bu tür anları anlatıyor.
+
+İyi haber: Ses yeterince doğal olduğunda, arayanların ilk iki üç konuşma turunda güven kazanabildiği belirtiliyor (PolyAI teknoloji müdürü Shawn Wen).
+
+Bugün ne yapabilirsiniz?
+• Bir sesli asistan kullanıyor ya da düşünüyorsanız, önce kendiniz arayıp deneyin.
+• Cevap geç mi geliyor, isim ve rakamları doğru anlıyor mu, yapay zeka olduğunu söylüyor mu, bunlara bakın.
+
+Dikkat: Bunlar yöneticilerin konferanstaki görüşleri; kesin bir ölçüm ya da ürün duyurusu değil. Haberi TechCrunch'tan aktarıyorum, konuşmaları kendim doğrulayamadım.
+
+Kaynaklar
+techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet
+
+Kaydedin, meslektaşınıza gönderin.
+
+#teknikbilgekoc #gunlukyapayzekahaberi
