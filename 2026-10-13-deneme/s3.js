@@ -1,4 +1,6 @@
-const baslik = (k, t, col) => { chip(k, 150, 190, col); serif(t, 150, 285, { size: 64, color: C.ivory }); };
+let MARK = 0;
+const baslik = (k, t, col) => { profil(150, 112, 88); chip(k, 150, 250, col); serif(t, 150, 345, { size: 64, color: C.ivory }); MARK = svg.childNodes.length; };
+const kaydir = () => { const G = g({ transform: 'translate(0,60)' }); [...svg.childNodes].slice(MARK, -1).forEach(n => G.appendChild(n)); };
 const balon = (x, y, w, col, n = 3, ok = 'sol') => {
   el('rect', { x, y, width: w, height: 90, rx: 34, fill: '#1B0F24', stroke: col, 'stroke-width': 5 });
   for (let k = 0; k < n; k++) C2(svg, x + 40 + k * 34, y + 45, 10, col);
@@ -19,6 +21,7 @@ async function build() {
   adim(585, 'ADIM 2', 'Model saklar', 'Önemli bilgileri ayıklar.', C.gold, (x, y, c) => { P(svg, `M${x - 22} ${y - 34} h44 v68 l-22 -18 l-22 18 z`, 'none', { stroke: c, 'stroke-width': 5, 'stroke-linejoin': 'round' }); });
   adim(820, 'ADIM 3', 'Gerektiğinde hatırlatır', 'Doğru anda, doğru bilgiyi.', C.pink, (x, y, c) => { C2(svg, x, y - 8, 22, 'none', { stroke: c, 'stroke-width': 5 }); P(svg, `M${x - 12} ${y + 22} h24 M${x - 8} ${y + 34} h16`, 'none', { stroke: c, 'stroke-width': 5, 'stroke-linecap': 'round' }); });
   text('Meta\'nın tanımı: "aktif hafıza"', 540, 1120, { size: 32, italic: true, color: C.goldHi, anchor: 'middle' });
+  kaydir();
   done();
 }
 build();

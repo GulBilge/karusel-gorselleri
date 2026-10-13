@@ -1,4 +1,6 @@
-const baslik = (k, t, col) => { chip(k, 150, 190, col); serif(t, 150, 285, { size: 64, color: C.ivory }); };
+let MARK = 0;
+const baslik = (k, t, col) => { profil(150, 112, 88); chip(k, 150, 250, col); serif(t, 150, 345, { size: 64, color: C.ivory }); MARK = svg.childNodes.length; };
+const kaydir = () => { const G = g({ transform: 'translate(0,60)' }); [...svg.childNodes].slice(MARK, -1).forEach(n => G.appendChild(n)); };
 const balon = (x, y, w, col, n = 3, ok = 'sol') => {
   el('rect', { x, y, width: w, height: 90, rx: 34, fill: '#1B0F24', stroke: col, 'stroke-width': 5 });
   for (let k = 0; k < n; k++) C2(svg, x + 40 + k * 34, y + 45, 10, col);
@@ -21,6 +23,7 @@ async function build() {
   el('path', { d: 'M190 925 h28 v50 l-14 -11 l-14 11 z', fill: C.gold });
   serif('Kaydedin, meslektaşınıza gönderin.', 244, 975, { size: 36, weight: 600, italic: true, color: C.goldHi });
   text('Kaynak ve ayrıntılar açıklamada.', 540, 1100, { size: 30, italic: true, color: C.muted, anchor: 'middle' });
+  kaydir();
   done();
 }
 build();

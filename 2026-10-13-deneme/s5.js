@@ -1,4 +1,6 @@
-const baslik = (k, t, col) => { chip(k, 150, 190, col); serif(t, 150, 285, { size: 64, color: C.ivory }); };
+let MARK = 0;
+const baslik = (k, t, col) => { profil(150, 112, 88); chip(k, 150, 250, col); serif(t, 150, 345, { size: 64, color: C.ivory }); MARK = svg.childNodes.length; };
+const kaydir = () => { const G = g({ transform: 'translate(0,60)' }); [...svg.childNodes].slice(MARK, -1).forEach(n => G.appendChild(n)); };
 const balon = (x, y, w, col, n = 3, ok = 'sol') => {
   el('rect', { x, y, width: w, height: 90, rx: 34, fill: '#1B0F24', stroke: col, 'stroke-width': 5 });
   for (let k = 0; k < n; k++) C2(svg, x + 40 + k * 34, y + 45, 10, col);
@@ -19,6 +21,7 @@ async function build() {
   text('Önce abonelere gelecek', 200, 955, { size: 34, color: C.goldHi });
   text('Türkiye ve fiyat: resmi sayfada yok.', 200, 1002, { size: 30, color: C.muted });
   text('Kullanmadan önce kontrol edin.', 540, 1130, { size: 34, italic: true, color: C.goldHi, anchor: 'middle' });
+  kaydir();
   done();
 }
 build();
