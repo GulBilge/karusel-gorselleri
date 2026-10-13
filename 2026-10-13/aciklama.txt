@@ -1,0 +1,27 @@
+Yapay zeka sizi her konuşmada hatırlasa, işiniz nasıl değişirdi?
+
+Meta, ilk "öncü" yapay zeka modeli Muse Wonder'ı 12 Ekim 2026'da tanıttı. Şirket, modelin kişisel ve profesyonel yapay zeka asistanları (agent) için tasarlandığını söylüyor.
+
+Neler değişti?
+• "Aktif hafıza" (active memory): Meta'ya göre model, sizinle ilgili önemli bilgileri konuşmalar boyunca taşıyor ve işe yarayacağı anda hatırlıyor.
+• "Aktif odak" (active focus): Zor hedeflerde farklı yollar deniyor, engellerle karşılaşınca yön değiştiriyor, gerektiğinde soru soruyor ve önemli adımlardan önce sizi bilgilendiriyor.
+• Kodlama, hukuk, finans ve sağlık gibi alanlarda uzmanlık gerektiren görevlerde güçlü sonuçlar verdiği belirtiliyor (Meta'nın kendi testleri; bağımsız doğrulama yok).
+
+Kimler yararlanabilir?
+• Geliştiriciler: Muse Wonder, Meta Model API (programlama arayüzü) ve Muse Code üzerinden şimdi kullanılabiliyor. Muse Wonder Full, Muse Code abonelerine açık.
+• Genel kullanıcılar: Muse uygulamasına önce abonelere gelecek.
+• Türkiye'de kullanılabilirlik ve fiyat resmi sayfada belirtilmiyor; kullanmadan önce kontrol edin.
+
+Örneğin (varsayımsal): Her müşteri görüşmesinde geçmiş notları yeniden anlatmak yerine asistan bağlamı kendisi hatırlıyor.
+
+Dikkat: Hafıza özelliği, kişisel ve müşteri bilgilerinin nerede saklandığını önemli kılar. Kullanmadan önce gizlilik ayarlarını okuyun. Meta tam güvenlik raporunun yakında yayımlanacağını söylüyor.
+
+Bugün yapın: Yapay zekaya sürekli tekrar ettiğiniz 3 bilgiyi yazın; hafıza bunları tek seferde çözer mi, değerlendirin.
+
+Kaynaklar:
+research.meta.ai/blog/muse-wonder
+techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/
+
+Kaydedin, meslektaşınıza gönderin.
+
+#teknikbilgekoc #gunlukyapayzekahaberi
