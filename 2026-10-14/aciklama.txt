@@ -1,0 +1,6 @@
+Uber'in güvenlik şefi: yapay zeka ajanlarını da çalışan gibi izleyin. Şirketinizde yapay zekanın hangi sistemlere erişimi olduğunu biliyor musunuz?
+
+Kaynaklar:
+claude.com/resources/articles/uber-s-ciso-on-building-an-insider-threat-program-for-ai
+
+#teknikbilgekoc #gunlukyapayzekahaberi
