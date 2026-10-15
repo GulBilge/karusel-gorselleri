@@ -1,0 +1,29 @@
+const suslemeler = () => {
+  kaleydoskop(svg, 1010, 130, 230, 0.22);
+  dal(135, 1235, 170, 12, 1, C.emerald).setAttribute('opacity', 0.5);
+  dal(945, 1235, 160, -14, -1, C.emerald).setAttribute('opacity', 0.5);
+};
+let MARK = 0;
+const baslik = (k, t, col) => { profil(150, 112, 88); chip(k, 150, 250, col); serif(t, 150, 345, { size: 64, color: C.ivory }); MARK = svg.childNodes.length; };
+const kaydir = () => { const G = g({ transform: 'translate(0,60)' }); [...svg.childNodes].slice(MARK, -1).forEach(n => G.appendChild(n)); };
+const kisi = (x, y, col, s = 1) => { C2(svg, x, y - 30 * s, 26 * s, '#1B0F24', { stroke: col, 'stroke-width': 6 }); P(svg, `M${x - 46 * s} ${y + 50 * s} Q${x} ${y - 20 * s} ${x + 46 * s} ${y + 50 * s} Z`, '#1B0F24', { stroke: col, 'stroke-width': 6, 'stroke-linejoin': 'round' }); };
+const robot = (x, y, col, s = 1) => { el('rect', { x: x - 44 * s, y: y - 56 * s, width: 88 * s, height: 70 * s, rx: 18, fill: '#1B0F24', stroke: col, 'stroke-width': 6 }); C2(svg, x - 18 * s, y - 24 * s, 8 * s, col); C2(svg, x + 18 * s, y - 24 * s, 8 * s, col); P(svg, `M${x} ${y - 56 * s} v-22 `, 'none', { stroke: col, 'stroke-width': 6 }); C2(svg, x, y - 84 * s, 7 * s, col); el('rect', { x: x - 50 * s, y: y + 24 * s, width: 100 * s, height: 40 * s, rx: 14, fill: '#1B0F24', stroke: col, 'stroke-width': 6 }); };
+// klasik telefon ahizesi (çizgi ikon)
+const ahize = (x, y, col, s = 1, rot = -25) => P(svg, `M-60 10 L-60 -4 Q-60 -14 -52 -16 Q-30 -32 0 -32 Q30 -32 52 -16 Q60 -14 60 -4 L60 10 Q60 18 52 18 L36 18 Q28 18 28 10 L28 2 Q28 -8 18 -10 Q0 -14 -18 -10 Q-28 -8 -28 2 L-28 10 Q-28 18 -36 18 L-52 18 Q-60 18 -60 10 Z`, '#1B0F24', { stroke: col, 'stroke-width': 5 / s, 'stroke-linejoin': 'round', transform: `translate(${x} ${y}) rotate(${rot}) scale(${s})` });
+const sesDalga = (x, y, col, s = 1) => { for (let i = 1; i <= 3; i++) P(svg, `M${x + i * 18 * s} ${y - i * 20 * s} Q${x + i * 30 * s} ${y} ${x + i * 18 * s} ${y + i * 20 * s}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-linecap': 'round', opacity: 1 - i * 0.2 }); };
+const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-dasharray': '4 14', 'stroke-linecap': 'round' }); P(svg, `M${x2 - 14} ${y - 14} L${x2} ${y} L${x2 - 14} ${y + 14}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }); };
+const bileklik = (x, y, col, s = 1) => { el('rect', { x: x - 22 * s, y: y - 70 * s, width: 44 * s, height: 140 * s, rx: 18 * s, fill: '#1B0F24', stroke: col, 'stroke-width': 5 }); el('rect', { x: x - 34 * s, y: y - 30 * s, width: 68 * s, height: 60 * s, rx: 16 * s, fill: '#1B0F24', stroke: col, 'stroke-width': 6 }); C2(svg, x, y, 8 * s, col); };
+const telKart = (x, y, col, s = 1) => { el('rect', { x: x - 40 * s, y: y - 75 * s, width: 80 * s, height: 150 * s, rx: 14 * s, fill: '#1B0F24', stroke: C.muted, 'stroke-width': 4 }); el('rect', { x: x - 28 * s, y: y - 40 * s, width: 56 * s, height: 80 * s, rx: 8 * s, fill: '#1B0F24', stroke: col, 'stroke-width': 6 }); C2(svg, x, y, 7 * s, col); };
+async function build() {
+  await fontsReady(); paper('purple'); footer('2 / 8'); suslemeler();
+  baslik('NE OLDU? · 15 EKİM', 'İki yeni cihaz çıktı', C.pink);
+  card(150, 380, 820, 290, C.pink);
+  bileklik(260, 530, C.goldHi, 1.2);
+  para('Amazon geçen yıl Bee diye bir şirket aldı. Bu şirketin konuşmaları not alan bir bilekliği vardı.', 360, 470, { size: 33, weight: 700, color: C.ivory, width: 570 });
+  card(150, 700, 820, 280, C.gold);
+  para('Konuşmanı dinler, özetini ve yapılacakları çıkarır.', 200, 780, { size: 40, weight: 700, color: C.ivory, width: 720 });
+  para('Amazon\'a göre sesi yazıya çevirip siliyor, saklamıyor.', 200, 905, { size: 30, color: C.muted, width: 720 });
+  kaydir();
+  done();
+}
+build();
