@@ -1,0 +1,7 @@
+Google'ın yapay zekası Gemini'nin en yeni sürümü çıktı: Gemini 4 Argon. Artık ona bir iş verip gidebiliyorsun; sen başında olmasan da devam ediyor, arada ne yaptığını yazıyor. Şimdilik aylık ücret ödeyenler kullanabiliyor, Türkiye'den kullanılıp kullanılamayacağını Google yazmıyor.
+
+Kaynaklar:
+blog.google/innovation-and-ai/products/gemini-app/gemini-4-argon-availability
+blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon
+
+#teknikbilgekoc #gunlukyapayzekahaberi
