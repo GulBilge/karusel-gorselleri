@@ -40,26 +40,61 @@ Sürüm numarası (3.0, 4.5) kapakta gerekmez; caption'da kalsın.
 | beta | deneme sürümü |
 Teknik terim kaçınılmazsa: önce Türkçesi, sonra parantez içinde İngilizcesi; slayt başına en çok bir tane.
 
-## 4. Rakamları günlük dile çevir
-- "%70" → "10 aramadan 7'si"
-- "0,08 $/dakika" → "dakikası yaklaşık 3 TL" yalnızca kur kesinse; değilse "dakikası 8 sent"
-- "~20.000 çağrı/gün" → "günde yaklaşık 20 bin arama"
+## 4. Rakamı başlık yapma, durumu anlat
+- İstatistik cümlesi ("%70", "10 aramadan 7'sini çözüyor") çeviri kokar; Türkçede kimse böyle konuşmaz (Bilge, 15 Ekim 2026). Rakamın ne demek olduğunu günlük sözle anlat: "arayanların çoğunun işini yapay zeka hallediyor".
+- Rakam gerekiyorsa yalnızca ara slaytta ya da caption'da, yuvarlak ve sade: "her gün yaklaşık 20 bin arama". Kapakta rakam yok (çok çarpıcı ve tek başına anlaşılır değilse).
+- Para: "0,08 $/dakika" → "dakikası 8 sent".
+
+## 4b. Çevirmen fiili değil, konuşma fiili
+İngilizce fiilin sözlük karşılığı yerine Türkçede o durumda gerçekten söylenen fiili kullan:
+| Çeviri kokan | Doğal |
+|---|---|
+| sorunu çözüyor (resolves) | işini hallediyor, hallolur |
+| telefonları yanıtlıyor (handles calls) | telefonlara bakıyor, telefonu açıyor |
+| sunuyor, sağlıyor (offers, provides) | veriyor, var |
+| gerçekleştiriyor (performs) | yapıyor |
+| kullanıma sundu (launched) | çıkardı, kullanıma açtı |
+| desteklemiyor / desteği yazmıyor | bilmiyor / belli değil |
+| iade tanımlar (issues credits) | para iade eder |
+| kargolar (ships) | gönderir |
+| -ebilmektedir, -mektedir | -ebiliyor, -iyor |
+
+## 4c. Bilge'nin sesi (örnek cümleler, kendi Reels altyazılarından)
+Yazdığın cümle bunların yanında yabancı durmamalı:
+- "Claude'a tekrar tekrar aynı şeyleri yazıyorsan bu özelliği bilmen gerekiyor."
+- "Yorumlara cevap vermekle geçen zamanı işimde kullanmak istiyordum."
+- "En iyi fikrim masada değil, salıncak başında geldi."
+Ortak noktalar: günlük fiil, kısa cümle, okuyanın gerçek bir derdi, rakam ve jargon yok.
+
+## 4d. Okur kontrolünden çıkan dersler (15 Ekim 2026)
+- Tek isim, tek şey: aynı şeye bir slaytta "asistan", ötekinde "sesli asistan", ötekinde "yapay zeka" deme; okur farklı şeyler sanıyor. İki şirket varsa (xAI ve Starlink) ikisinin ilişkisini ilk geçtiği yerde tek cümleyle söyle.
+- Belirsiz fiil kullanma: "telefonlara bakıyor" tamir ediyor gibi anlaşıldı; "telefonları açıyor" dendi.
+- Kitap dili yok: "varsayımsal" yerine "Bunlar örnek; gerçek bir kullanım değil."; "kimliğini doğrular" yerine "arayanı tanır, kontrol eder".
+- Para: sent/dakika okura bir şey söylemiyor; saatlik ve yuvarlak ver ("saati yaklaşık 5 dolar").
+- Çekincenin NEDEN önemli olduğunu söyle: "Rakamları şirket açıkladı" değil "Şirketin kendi sözü, kimse kontrol etmedi".
+- Kitlenin işini say: "Klinik" yerine "Salon / klinik" gibi okurun kendini bulacağı iş adları.
 
 ## 5. Çekinceyi bir kez söyle
 - "Şirketin kendi verisi", "Türkiye'de geçerliliği belirtilmiyor" gibi uyarılar tek slaytta (DİKKAT) ya da caption'da bir kez yazılır; her slayta serpiştirilmez.
 
 ## 6. Kapak başlığı
 - Okuyan 2 saniyede "kim, ne yaptı, bana ne" anlamalı.
-- Örnek (kötü): "xAI'ın sesli ajanı 10 aramanın 7'sini insansız çözüyor."
-- Örnek (iyi): "Elon Musk'ın yapay zekası telefonları açıyor: 10 aramadan 7'sini kendi çözüyor."
+- Kötü (yayınlandı, anlaşılmadı): "xAI'ın sesli ajanı 10 aramanın 7'sini insansız çözüyor."
+- Kötü (çeviri kokuyor): "Musk'ın yapay zekası 10 aramadan 7'sini kendisi çözüyor."
+- İyi: "Musk'ın şirketinde telefonlara artık yapay zeka bakıyor."
 
 ## 7. Caption
 - İlk cümle de aynı sadelikte; jargon yok, özne tanıtılmış. Örnek:
-  "Elon Musk'ın yapay zeka şirketi xAI, telefonda müşteriyle konuşan bir sesli asistan çıkardı. Şirkete göre Starlink'in müşteri hattında 10 aramadan 7'sini kimseye aktarmadan çözüyor."
+  "Elon Musk'ın şirketi Starlink'i arayan müşterilerin çoğunun işini artık yapay zeka hallediyor."
 
 ## 8. Yayından önce son kontrol (her slayt için)
 1. Yasaklı kelime var mı? (Tablo 3)
 2. Yabancı şirket/ürün tanıtıldı mı? (Bölüm 2)
 3. Yüksek sesle okununca doğal mı?
-4. Bir rakam varsa günlük dile çevrildi mi?
+4. Rakam başlık olmuş mu, fiiller konuşma fiili mi? (Bölüm 4, 4b)
 5. Slayt başka hiçbir slayt görülmeden anlaşılıyor mu?
+
+## 9. Bağımsız okur kontrolü (zorunlu)
+Görseller üretilmeden önce bütün slayt metinlerini ve caption'ı tek listede topla ve bir alt ajana (Agent aracı) şu görevle ver:
+"Sen İstanbul'da küçük bir güzellik salonu işleten, yapay zekayı yalnızca duymuş, 40 yaşında birisin. Aşağıdaki her satırı oku. (a) İlk okuyuşta anlamadığın, (b) çeviri gibi duran ya da 'biz böyle konuşmayız' dediğin, (c) bilmediğin bir isim ya da kelime içeren satırları işaretle; her biri için arkadaşına anlatırken nasıl söyleyeceğini yaz. Sorunsuz satırları yazma."
+İşaretlenen her satırı önerilen doğal hâline göre düzelt; düzeltmeyi bir kez daha aynı kontrolden geçir. Bu adım atlanırsa yayın yapılmaz.

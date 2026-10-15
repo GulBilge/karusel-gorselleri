@@ -15,7 +15,7 @@ const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', {
 async function build() {
   await fontsReady(); paper('purple'); footer('6 / 8'); suslemeler();
   baslik('DİKKAT', 'Kurmadan önce bil', C.pink);
-  [['Fiyat', 'Dakikası 8 sent (saati 4,80 dolar)', C.gold], ['Kurulum', 'Hazır uygulama değil, yazılımcı gerekir', C.emerald], ['Türkçe', 'Türkçe konuşup konuşmadığı yazmıyor', C.pink], ['Rakamlar', '10\'da 7 oranı şirketin kendi açıklaması', C.purple]].forEach(([a, b, col], i) => {
+  [['Fiyat', 'Saati yaklaşık 5 dolar', C.gold], ['Kim kurar?', 'Kendin kuramıyorsun, yazılımcı lazım', C.emerald], ['Türkçe', 'Türkçe bilip bilmediği belli değil', C.pink], ['Rakamlar', 'Şirketin kendi sözü, kimse kontrol etmedi', C.purple]].forEach(([a, b, col], i) => {
     const y = 380 + i * 150;
     card(150, y, 820, 125, col);
     text(a.toUpperCase(), 200, y + 52, { size: 26, weight: 700, color: col, ls: 3 });

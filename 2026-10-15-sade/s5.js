@@ -15,14 +15,14 @@ const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', {
 async function build() {
   await fontsReady(); paper('pink'); footer('5 / 8'); suslemeler();
   baslik('SENİN İŞİNDE', 'Hangi işte ne yapar?', C.gold);
-  [['Klinik', 'Randevu alır, hatırlatır', C.emerald], ['E-ticaret', '"Kargom nerede?" sorusunu yanıtlar', C.gold], ['Danışmanlık', 'Ön görüşme yapıp takvime yazar', C.pink]].forEach(([a, b, col], i) => {
+  [['Salon / klinik', 'Randevu alır, hatırlatır', C.emerald], ['E-ticaret', '"Kargom nerede?" sorusunu yanıtlar', C.gold], ['Danışmanlık', 'Ön görüşme yapıp takvime yazar', C.pink]].forEach(([a, b, col], i) => {
     const y = 380 + i * 200;
     card(150, y, 820, 170, col);
     ahize(235, y + 85, col, 0.9);
     text(a, 320, y + 72, { size: 42, weight: 700, color: C.ivory });
     para(b, 320, y + 122, { size: 32, color: C.goldHi, width: 620 });
   });
-  text('Örnekler varsayımsaldır.', 540, 1010, { size: 30, italic: true, color: C.muted, anchor: 'middle' });
+  text('Bunlar örnek; gerçek bir kullanım değil.', 540, 1010, { size: 30, italic: true, color: C.muted, anchor: 'middle' });
   kaydir();
   done();
 }

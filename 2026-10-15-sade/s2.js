@@ -17,14 +17,14 @@ async function build() {
   baslik('NE OLDU? · 14 EKİM', 'Telefonu yapay zeka açıyor', C.pink);
   card(150, 380, 820, 300, C.pink);
   ahize(300, 520, C.goldHi, 1.5); sesDalga(370, 505, C.pink, 1.2);
-  text('Elon Musk\'ın şirketi xAI,', 470, 480, { size: 36, weight: 700, color: C.ivory });
-  text('telefonda müşteriyle', 470, 530, { size: 36, weight: 700, color: C.ivory });
-  text('konuşan asistan çıkardı.', 470, 580, { size: 36, weight: 700, color: C.ivory });
+  text('Musk\'ın yapay zeka şirketi', 470, 480, { size: 33, weight: 700, color: C.ivory });
+  text('xAI, müşteriyle telefonda', 470, 530, { size: 33, weight: 700, color: C.ivory });
+  text('konuşan yapay zeka yaptı.', 470, 580, { size: 33, weight: 700, color: C.ivory });
   text('Adı: Grok Voice', 470, 640, { size: 32, color: C.goldHi });
   card(150, 720, 820, 270, C.gold);
-  text('Bir saniyeden kısa', 200, 810, { size: 50, weight: 700, color: C.ivory });
-  text('sürede cevap veriyor.', 200, 875, { size: 50, weight: 700, italic: true, color: C.goldHi });
-  text('Sözünü kesip konuşabiliyorsun.', 200, 940, { size: 34, color: C.muted });
+  text('Hiç bekletmeden', 200, 810, { size: 50, weight: 700, color: C.ivory });
+  text('cevap veriyor.', 200, 875, { size: 50, weight: 700, italic: true, color: C.goldHi });
+  text('O konuşurken araya girebiliyorsun.', 200, 940, { size: 34, color: C.muted });
   kaydir();
   done();
 }

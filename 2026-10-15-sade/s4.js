@@ -14,8 +14,8 @@ const sesDalga = (x, y, col, s = 1) => { for (let i = 1; i <= 3; i++) P(svg, `M$
 const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-dasharray': '4 14', 'stroke-linecap': 'round' }); P(svg, `M${x2 - 14} ${y - 14} L${x2} ${y} L${x2 - 14} ${y + 14}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }); };
 async function build() {
   await fontsReady(); paper('purple'); footer('4 / 8'); suslemeler();
-  baslik('GERÇEK KULLANIM', 'Starlink\'te ne yapıyor?', C.emerald);
-  const adim = [['Arayanın kimliğini doğrular', C.emerald], ['Cihaz arızasını çözer', C.gold], ['Hesaba iade tanımlar', C.pink], ['Yeni cihazı kargolar', C.purple]];
+  baslik('ŞU AN KİM KULLANIYOR?', 'Starlink\'te neler yapıyor?', C.emerald);
+  const adim = [['Arayanı tanır, kontrol eder', C.emerald], ['Bozuk cihazla ilgilenir', C.gold], ['Gerekirse parasını geri öder', C.pink], ['Yeni cihaz gönderir', C.purple]];
   adim.forEach(([t, col], i) => {
     const y = 390 + i * 135;
     card(150, y, 820, 110, col);
@@ -23,8 +23,8 @@ async function build() {
     text(String(i + 1), 225, y + 70, { size: 40, font: 'Playfair Display', weight: 700, color: col, anchor: 'middle' });
     text(t, 290, y + 70, { size: 40, weight: 700, color: C.ivory });
   });
-  text('Günde yaklaşık 20 bin arama, birçok dilde.', 540, 990, { size: 30, weight: 700, color: C.goldHi, anchor: 'middle' });
-  text('Starlink: Musk\'ın uydu interneti', 540, 1040, { size: 28, italic: true, color: C.muted, anchor: 'middle' });
+  text('Her gün yaklaşık 20 bin kişiyle konuşuyor.', 540, 990, { size: 30, weight: 700, color: C.goldHi, anchor: 'middle' });
+  text('Starlink: Musk\'ın uydu internet şirketi', 540, 1040, { size: 28, italic: true, color: C.muted, anchor: 'middle' });
   kaydir();
   done();
 }

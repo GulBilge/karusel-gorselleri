@@ -27,7 +27,7 @@ async function build() {
   ahize(740, 580, C.emerald, 1.6); sesDalga(820, 570, C.goldHi, 1.3);
   text('Derdini', 770, 770, { size: 34, weight: 700, color: C.ivory, anchor: 'middle' });
   text('anlatırsın, aynı', 770, 815, { size: 34, weight: 700, color: C.ivory, anchor: 'middle' });
-  text('aramada çözülür', 770, 860, { size: 34, weight: 700, color: C.goldHi, anchor: 'middle' });
+  text('aramada hallolur', 770, 860, { size: 34, weight: 700, color: C.goldHi, anchor: 'middle' });
   kaydir();
   done();
 }
