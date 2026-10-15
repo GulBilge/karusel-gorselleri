@@ -15,6 +15,12 @@
 4. Cevabı bilmiyor ama tahmin etmek istiyor: kaydırır.
 5. Jargon, rakam, şirket adı yok; şirket adı küçük etikette.
 
+## İki çalışan soru türü (Bilge, 16 Ekim 2026)
+1. SOMUT ENDİŞE (evet/hayır ama okurun gerçek korkusu): "Aramaları yapay zeka karşılasa müşteri fark eder mi?"
+2. HAYAL SORUSU (açık uçlu, "ne olurdu?"): "Gece boyu yapay zeka senin yerine çalışsaydı ne olurdu?" Okuru bir sahneyi kafasında kurmaya çağırır; cevap tek kelime değildir, merak daha uzun sürer.
+Bilge'ye UYMAYAN: "İşini yapay zekaya bırakıp gitsen, bitmiş olur mu?" Kuru evet/hayır sorusu; ne bir korkuya dokunuyor ne bir sahne kuruyor.
+Seçim: Haber okurun işine dokunan bir risk/endişe taşıyorsa 1, yeni bir yetenek/imkân taşıyorsa 2.
+
 ## Önerilen kalıp
 - KAPAK (soru): "[okurun işinden bir durum] + yapay zeka [haberdeki yeni şeyi] yapsa, [okurun asıl merakı]?"
   Etiket hapı bilgiyi taşır: "GOOGLE GEMINI · YENİ SÜRÜM", "ELON MUSK · STARLINK".
@@ -25,7 +31,7 @@
 | Haber | Kapak sorusu | 2. slayt başlığı |
 |---|---|---|
 | Grok Voice | Telefonu yapay zeka açsa, müşterin fark eder mi? | Telefonu yapay zeka açıyor |
-| Gemini 4 Argon | İşini yapay zekaya bırakıp gitsen, bitmiş olur mu? | Artık sen yokken çalışıyor |
+| Gemini 4 Argon | Gece boyu yapay zeka senin yerine çalışsaydı ne olurdu? | Artık sen yokken çalışıyor |
 | Meta hafıza | Yapay zeka seni hatırlasa, her şeyi baştan anlatmak zorunda kalmaz mısın? | Meta'nın yapay zekası artık hatırlıyor |
 | Uber güvenlik | Yapay zekaya şirketinin dosyalarını açsan, ne yaptığını görebilir misin? | Uber, yapay zekayı çalışan gibi izliyor |
 

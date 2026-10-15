@@ -15,9 +15,9 @@ async function build() {
   perde(720, 1250);
   rozetZemin(); profil(150, 124, 112);
   chip('GOOGLE GEMINI · YENİ SÜRÜM', 150, 905, C.gold);
-  serif('İşini yapay zekaya', 150, 1010, { size: 72, color: C.ivory });
-  serif('bırakıp gitsen,', 150, 1094, { size: 72, color: C.goldHi });
-  serif('bitmiş olur mu?', 150, 1178, { size: 72, color: C.ivory, italic: true, weight: 600 });
+  serif('Gece boyu yapay', 150, 1010, { size: 72, color: C.ivory });
+  serif('zeka senin yerine', 150, 1094, { size: 72, color: C.goldHi });
+  serif('çalışsaydı ne olurdu?', 150, 1178, { size: 68, color: C.ivory, italic: true, weight: 600 });
   text('kaydır →', 950, 1318, { size: 52, font: 'Caveat', weight: 700, color: C.gold, anchor: 'end' }).dataset.free = 1;
   done();
 }
