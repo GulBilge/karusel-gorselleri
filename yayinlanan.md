@@ -13,3 +13,4 @@ Her sabah haber seçmeden önce bu dosyaya bakın; listedeki bir haberi tekrar s
 | 2026-10-12 | Sesli yapay zeka asistanlarının zayıf noktaları (TechCrunch, 11 Ekim 2026) | https://techcrunch.com/2026/10/11/these-execs-think-voice-ai-hasnt-reached-its-chatgpt-moment-yet/ | Bilge onayıyla elle yayınlandı; klasör `2026-10-12-v3/` |
 | 2026-10-13 | Meta Muse Wonder, aktif hafıza (12 Ekim 2026) | https://research.meta.ai/blog/muse-wonder | Otomatik yayın (yayınladı 07:46); klasör `2026-10-13/` |
 | 2026-10-14 | Uber CISO: yapay zeka için iç tehdit programı (13 Ekim 2026) | https://claude.com/resources/articles/uber-s-ciso-on-building-an-insider-threat-program-for-ai | Otomatik yayın (yayınladı 07:46); klasör `2026-10-14/` |
+| 2026-10-15 | xAI Grok Voice 3.0 sesli ajan (14 Ekim 2026) | https://x.ai/news/grok-voice-3 | Bilge elle yayınladı (depoya push yetkisi yoktu); klasör `2026-10-15/` |
