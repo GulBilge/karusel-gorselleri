@@ -1,3 +1,15 @@
+# GEÇERLİ KANCA KURALI (Bilge onayı, 16 Ekim 2026) — aşağıdaki eski notların ve "kapakta özne + değişim" kuralının yerine geçer
+Ayrıntı, araştırma ve örnekler: `../kanca-deneme/kanca-onerisi.md`.
+
+KAPAK = okurun kendi hayatından bir SORU. İki tür:
+1. SOMUT ENDİŞE (haber okurun işine dokunan bir risk/endişe taşıyorsa): "Aramaları yapay zeka karşılasa müşteri fark eder mi?" / "Telefonu yapay zeka açsa, müşterin fark eder mi?"
+2. HAYAL SORUSU (haber yeni bir yetenek/imkân taşıyorsa; açık uçlu, "ne olurdu?"): "Gece boyu yapay zeka senin yerine çalışsaydı ne olurdu?"
+KULLANMA: kuru evet/hayır sorusu ("İşini yapay zekaya bırakıp gitsen, bitmiş olur mu?"), genel soru ("Yapay zeka her şeyi değiştirecek mi?"), haber başlığı gibi cümle ("X yenilendi. Ne değişti?"), kapakta rakam, cümleye şirket adıyla başlamak, cevabı kapakta vermek.
+BİLGİ ETİKETTE: şirket/ürün ve haber türü kapaktaki etiket hapında ("GOOGLE GEMINI · YENİ SÜRÜM", "ELON MUSK · STARLINK"); soru tek başına "bilgi vermiyor" algısına düşmesin.
+2. SLAYT = haberi söyleyen DÜZ CÜMLE başlık ("Telefonu yapay zeka açıyor", "Artık sen yokken çalışıyor"); kapağı görmeyen biri de anlar (Instagram karuseli 2. slayttan yeniden gösterebiliyor).
+CEVAP: sorunun tam cevabı 5.–7. slaytta verilir.
+Örnek görseller: `../kanca-deneme/k1.jpg`, `k2.jpg`, `g1.jpg`, `g2.jpg`.
+
 # Instagram kanca formatları (araştırma notu, 13 Ekim 2026)
 Kaynaklar çoğunlukla pazarlama blogları; sayısal iddialar kesin değildir. Instagram resmî olarak yalnızca şunu söyledi (Mosseri, Ocak 2025): izlenme süresi, erişim başına beğeni ve erişim başına gönderim (send) en ağırlıklı sinyallerdir. "Uzun altyazı cezalandırılıyor" iddiasını hiçbir kaynakta doğrulayamadım; aksine altyazı metni arama için indeksleniyor. Yine de Bilge'nin isteğiyle değer slaytlara taşınır, altyazı kısa tutulur.
 
