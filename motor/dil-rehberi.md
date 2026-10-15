@@ -18,6 +18,7 @@ Kitle yabancı şirketleri tanımıyor. İlk geçtiği yerde (kapak ya da 2. sla
 Sürüm numarası (3.0, 4.5) kapakta gerekmez; caption'da kalsın.
 
 ## 3. Yasaklı kelimeler ve Türkçe karşılıkları
+**"Ajan" kelimesi hiçbir yerde kullanılmaz (Bilge'nin açık isteği, 15 Ekim 2026): kapak, slayt, caption dahil. Kaynak "agent" diyorsa "yapay zeka asistanı" yaz.**
 | Kullanma | Yerine |
 |---|---|
 | ajan, yapay zeka ajanı | yapay zeka asistanı / kendi başına iş yapan yapay zeka |
