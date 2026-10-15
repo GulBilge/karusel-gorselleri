@@ -78,16 +78,19 @@ Ortak noktalar: günlük fiil, kısa cümle, okuyanın gerçek bir derdi, rakam 
 - Duyurudaki ürün daha önce de var mıydı? Resmi sayfada "2.0", "same price as …", "upgraded automatically" gibi ipuçlarına bak; gerekirse ürünün adıyla önceki haberleri ara.
 - Ürün zaten varsa "çıkardı / yaptı" DEME. Doğru çerçeve: "X zaten vardı (ne zamandır, nerede kullanılıyor). Yeni sürümde şu değişti." Okurun "bunu duymuştum, yeni olan ne?" sorusuna 2. ve 3. slayt cevap verir.
 - Değişikliği somut söyle (eski sürüm ne yapıyordu, yenisi ne yapıyor), rakamı yine günlük dile çevir ("yarı yarıya takılıyordu" → "çoğunu hallediyor").
-- Kapak bu durumda "yenilendi / yeni sürüm" der ve değişikliği ya da "Ne değişti?" sorusunu taşır. Örnek: "Musk'ın telefon asistanı yenilendi. Ne değişti?"
+- Kapak başlığı yine `motor/kanca-formatlari.md` GEÇERLİ KANCA KURALI'na göre okurun hayatından bir sorudur; "yeni sürüm" bilgisi etiket hapında durur (ör. "GOOGLE GEMINI · YENİ SÜRÜM"). "Zaten vardı, yeni sürümde şu değişti" anlatımı 2. ve 3. slayttadır.
 
 ## 5. Çekinceyi bir kez söyle
 - "Şirketin kendi verisi", "Türkiye'de geçerliliği belirtilmiyor" gibi uyarılar tek slaytta (DİKKAT) ya da caption'da bir kez yazılır; her slayta serpiştirilmez.
 
-## 6. Kapak başlığı
-- Okuyan 2 saniyede "kim, ne yaptı, bana ne" anlamalı.
+## 6. Kapak başlığı (16 Ekim 2026 güncellemesi)
+- Kanca türü ve kalıbı için GEÇERLİ kaynak: `motor/kanca-formatlari.md` en üstteki GEÇERLİ KANCA KURALI (somut endişe sorusu ya da hayal sorusu; şirket/ürün etiket hapında).
+- Bu rehberin dil kuralları başlıkta da geçerli: jargon yok, rakam yok, çeviri kokan fiil yok.
 - Kötü (yayınlandı, anlaşılmadı): "xAI'ın sesli ajanı 10 aramanın 7'sini insansız çözüyor."
-- Kötü (çeviri kokuyor): "Musk'ın yapay zekası 10 aramadan 7'sini kendisi çözüyor."
-- İyi: "Musk'ın şirketinde telefonlara artık yapay zeka bakıyor."
+- Kötü (haber başlığı gibi): "Musk'ın telefon asistanı yenilendi. Ne değişti?"
+- İyi (somut endişe): "Telefonu yapay zeka açsa, müşterin fark eder mi?" (etiket: "ELON MUSK · STARLINK")
+- İyi (hayal sorusu): "Gece boyu yapay zeka senin yerine çalışsaydı ne olurdu?" (etiket: "GOOGLE GEMINI · YENİ SÜRÜM")
+- 2. slayt başlığı haberi düz cümleyle söyler: "Telefonu yapay zeka açıyor."
 
 ## 7. Caption
 - İlk cümle de aynı sadelikte; jargon yok, özne tanıtılmış. Örnek:
