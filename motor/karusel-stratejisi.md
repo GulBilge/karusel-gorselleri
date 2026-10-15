@@ -7,7 +7,7 @@ Kural: aşağıda "RESMİ" diye işaretli olanlar Instagram/Meta kaynaklıdır; 
 
 | Bulgu | Durum | Bize etkisi |
 |---|---|---|
-| En ağırlıklı sinyaller: izlenme süresi, erişim başına beğeni, erişim başına GÖNDERİM (send). Gönderim, takip etmeyenlere ulaşmada biraz daha ağır. (Mosseri, Ocak 2025) | RESMİ (Mosseri video serisi; ikincil kaynaklarda aktarılıyor) | Karusel "birine gönderilecek" şekilde kurulur: son slayt "Bunu kime göndermelisiniz?" |
+| En ağırlıklı sinyaller: izlenme süresi, erişim başına beğeni, erişim başına GÖNDERİM (send). Gönderim, takip etmeyenlere ulaşmada biraz daha ağır. (Mosseri, Ocak 2025) | RESMİ (Mosseri video serisi; ikincil kaynaklarda aktarılıyor) | Karusel "birine gönderilecek" şekilde kurulur: son slayt "Bunu kime göndermelisin?" |
 | Karusel, ilk slaytla etkileşmeyen kişiye SONRAKİ slaytlarla yeniden gösterilir; bu yüzden tek görselden daha fazla erişim alır. (Mosseri, Temmuz 2025 aktarımı) | RESMİ söz, ikincil aktarım | 2. slayt "ikinci kapak" olmalı: tek başına görüldüğünde de anlaşılır ve merak uyandırır. |
 | 30 Nisan 2026: özgünlük kuralı fotoğraf ve karusellere genişledi. Başkasının içeriğini anlamlı katkı olmadan paylaşan hesaplar öneriden çıkar. | RESMİ (creators.instagram.com) | Görseller tamamen özgün çizilir; haber ekran görüntüsü/logo kullanılmaz; Bilge'nin yorumu ("sizin işinizde anlamı") her karuselde bulunur. |
 | Etiket sınırı: gönderi başına en çok 5 hashtag (Aralık 2025). | RESMİ (@creators duyurusu, ikincil aktarım) | Mevcut 2 sabit etiket uygun. |
@@ -21,10 +21,10 @@ Kural: aşağıda "RESMİ" diye işaretli olanlar Instagram/Meta kaynaklıdır; 
 2. **İKİNCİ KAPAK, haberin tek cümlesi.** Ne oldu, kim yaptı, ne zaman. Büyük yazı + küçük görsel. Instagram bu slaytı tek başına da gösterebilir: kapak görülmemiş gibi anlaşılır olmalı.
 3. **ÖNCE / SONRA.** Dün nasıldı, bugün ne değişti (iki sütun, ikonla).
 4. **NASIL ÇALIŞIYOR.** 3 adımlık akış (ok, ikon, en çok 3 kısa etiket).
-5. **SİZİN İŞİNİZDE.** 2–3 meslekten tek satırlık kullanım (klinik, eğitim, danışmanlık, e-ticaret). Varsayımsal ise "Örneğin (varsayımsal)" yaz.
+5. **SENİN İŞİNDE.** 2–3 meslekten tek satırlık kullanım (klinik, eğitim, danışmanlık, e-ticaret). Varsayımsal ise "Örneğin (varsayımsal)" yaz.
 6. **DİKKAT / SINIR.** Türkiye'de geçerli mi, ücretli mi, risk ne. (Güven: abartısız, doğrulanmış.)
-7. **BUGÜN YAPIN.** Tek, somut, 5 dakikalık adım.
-8. **KAPANIŞ, gönderim çağrısı.** "Bunu kime göndermelisiniz?" + kaydet ikonu. Tek eylem.
+7. **BUGÜN YAP.** Tek, somut, 5 dakikalık adım.
+8. **KAPANIŞ, gönderim çağrısı.** "Bunu kime göndermelisin?" + kaydet ikonu. Tek eylem.
 
 Habere göre 3–6 arasından biri çıkarılabilir (en az 6 slayt). Kaynaklar yalnızca caption'da.
 

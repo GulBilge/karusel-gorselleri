@@ -14,7 +14,7 @@ const sesDalga = (x, y, col, s = 1) => { for (let i = 1; i <= 3; i++) P(svg, `M$
 const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-dasharray': '4 14', 'stroke-linecap': 'round' }); P(svg, `M${x2 - 14} ${y - 14} L${x2} ${y} L${x2 - 14} ${y + 14}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }); };
 async function build() {
   await fontsReady(); paper('purple'); footer('6 / 8'); suslemeler();
-  baslik('DİKKAT', 'Kurmadan önce bilin', C.pink);
+  baslik('DİKKAT', 'Kurmadan önce bil', C.pink);
   [['Fiyat', 'Dakikası 8 sent (saati 4,80 dolar)', C.gold], ['Kurulum', 'Hazır uygulama değil, yazılımcı gerekir', C.emerald], ['Türkçe', 'Türkçe konuşup konuşmadığı yazmıyor', C.pink], ['Rakamlar', '10\'da 7 oranı şirketin kendi açıklaması', C.purple]].forEach(([a, b, col], i) => {
     const y = 380 + i * 150;
     card(150, y, 820, 125, col);

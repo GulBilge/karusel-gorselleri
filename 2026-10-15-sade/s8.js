@@ -14,7 +14,7 @@ const sesDalga = (x, y, col, s = 1) => { for (let i = 1; i <= 3; i++) P(svg, `M$
 const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-dasharray': '4 14', 'stroke-linecap': 'round' }); P(svg, `M${x2 - 14} ${y - 14} L${x2} ${y} L${x2 - 14} ${y + 14}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }); };
 async function build() {
   await fontsReady(); paper('purple'); footer('8 / 8'); suslemeler();
-  baslik('KAYDEDİN', 'Bunu kime gönderirsiniz?', C.gold);
+  baslik('KAYDET', 'Bunu kime gönderirsin?', C.gold);
   card(150, 390, 820, 420, C.purple);
   [[320, C.emerald], [540, C.goldHi], [760, C.pink]].forEach(([x, col]) => kisi(x, 560, col, 1.5));
   ahize(540, 452, C.gold, 1.1, 0);
@@ -22,7 +22,7 @@ async function build() {
   text('bir iş sahibine.', 540, 775, { size: 40, weight: 700, italic: true, color: C.goldHi, anchor: 'middle' });
   card(150, 860, 820, 120, C.gold);
   el('path', { d: 'M195 885 h28 v52 l-14 -11 l-14 11 z', fill: C.gold });
-  serif('Kaydedin, ona gönderin.', 250, 938, { size: 40, weight: 600, italic: true, color: C.goldHi });
+  serif('Kaydet, ona gönder.', 250, 938, { size: 40, weight: 600, italic: true, color: C.goldHi });
   kaydir();
   done();
 }

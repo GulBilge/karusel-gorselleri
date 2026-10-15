@@ -14,7 +14,7 @@ const sesDalga = (x, y, col, s = 1) => { for (let i = 1; i <= 3; i++) P(svg, `M$
 const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-dasharray': '4 14', 'stroke-linecap': 'round' }); P(svg, `M${x2 - 14} ${y - 14} L${x2} ${y} L${x2 - 14} ${y + 14}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }); };
 async function build() {
   await fontsReady(); paper('pink'); footer('7 / 8'); suslemeler();
-  baslik('BUGÜN YAPIN', 'Bir hafta aramaları sayın', C.emerald);
+  baslik('BUGÜN YAP', 'Bir hafta aramaları say', C.emerald);
   card(150, 380, 820, 380, C.emerald);
   // çetele
   for (let k = 0; k < 3; k++) { const x0 = 220 + k * 130; for (let i = 0; i < 4; i++) P(svg, `M${x0 + i * 22} 440 v110`, 'none', { stroke: C.goldHi, 'stroke-width': 7, 'stroke-linecap': 'round' }); P(svg, `M${x0 - 12} 530 L${x0 + 78} 455`, 'none', { stroke: C.pink, 'stroke-width': 7, 'stroke-linecap': 'round' }); }
@@ -22,7 +22,7 @@ async function build() {
   text('Kaçı hep aynı', 200, 640, { size: 46, weight: 700, color: C.ivory });
   text('5 soruyu soruyor?', 200, 705, { size: 46, weight: 700, italic: true, color: C.goldHi });
   card(150, 800, 820, 200, C.gold);
-  para('Çoğu aynıysa, bu aramaları bir sesli asistana devredebilirsiniz.', 200, 880, { size: 36, weight: 700, color: C.ivory, width: 720 });
+  para('Çoğu aynıysa, bu aramaları bir sesli asistana devredebilirsin.', 200, 880, { size: 36, weight: 700, color: C.ivory, width: 720 });
   kaydir();
   done();
 }

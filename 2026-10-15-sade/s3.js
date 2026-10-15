@@ -25,8 +25,8 @@ async function build() {
   card(570, 380, 400, 560, C.emerald);
   text('SONRA', 770, 450, { size: 28, weight: 700, color: C.emerald, anchor: 'middle', ls: 3 });
   ahize(740, 580, C.emerald, 1.6); sesDalga(820, 570, C.goldHi, 1.3);
-  text('Derdinizi', 770, 770, { size: 34, weight: 700, color: C.ivory, anchor: 'middle' });
-  text('anlatırsınız, aynı', 770, 815, { size: 34, weight: 700, color: C.ivory, anchor: 'middle' });
+  text('Derdini', 770, 770, { size: 34, weight: 700, color: C.ivory, anchor: 'middle' });
+  text('anlatırsın, aynı', 770, 815, { size: 34, weight: 700, color: C.ivory, anchor: 'middle' });
   text('aramada çözülür', 770, 860, { size: 34, weight: 700, color: C.goldHi, anchor: 'middle' });
   kaydir();
   done();

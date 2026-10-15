@@ -2,6 +2,9 @@
 
 Sorun: takipçi geri bildirimi "haberler karışık, anlaşılmıyor". Metinler İngilizce duyurunun kelime kelime çevirisi gibi okunuyor; şirketler ve ürünler tanıtılmadan anılıyor. Bu rehber slayt metni, kapak başlığı ve caption için GEÇERLİDİR; `rutin-talimati.md` dil kurallarıyla birlikte uygulanır.
 
+## 0. Hitap: "sen" (Bilge, 15 Ekim 2026)
+- Kapak, slayt ve caption'da okuyana "sen" diye seslen (Reels'teki gibi): "Kaydet, ona gönder", "Bugün yap", "Senin işinde". "Siz" ve "-iniz/-ınız" ekleri kullanılmaz. Saygılı ve sakin kal; laubali dil, argo yok.
+
 ## 1. Çeviri değil, yeniden anlatım
 - İngilizce cümleyi Türkçeye çevirme. Önce haberi kendine tek cümleyle, Türkçe düşünerek anlat; slayta o cümleyi yaz.
 - TEST: Slaytı yüksek sesle oku. Bir arkadaşına çay içerken böyle söyler miydin? Söylemezsen yeniden yaz.

@@ -24,7 +24,7 @@ async function build() {
   card(150, 720, 820, 270, C.gold);
   text('Bir saniyeden kısa', 200, 810, { size: 50, weight: 700, color: C.ivory });
   text('sürede cevap veriyor.', 200, 875, { size: 50, weight: 700, italic: true, color: C.goldHi });
-  text('Sözünü kesip konuşabiliyorsunuz.', 200, 940, { size: 34, color: C.muted });
+  text('Sözünü kesip konuşabiliyorsun.', 200, 940, { size: 34, color: C.muted });
   kaydir();
   done();
 }

@@ -14,7 +14,7 @@ const sesDalga = (x, y, col, s = 1) => { for (let i = 1; i <= 3; i++) P(svg, `M$
 const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-dasharray': '4 14', 'stroke-linecap': 'round' }); P(svg, `M${x2 - 14} ${y - 14} L${x2} ${y} L${x2 - 14} ${y + 14}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }); };
 async function build() {
   await fontsReady(); paper('pink'); footer('5 / 8'); suslemeler();
-  baslik('SİZİN İŞİNİZDE', 'Sizin işinizde ne yapar?', C.gold);
+  baslik('SENİN İŞİNDE', 'Hangi işte ne yapar?', C.gold);
   [['Klinik', 'Randevu alır, hatırlatır', C.emerald], ['E-ticaret', '"Kargom nerede?" sorusunu yanıtlar', C.gold], ['Danışmanlık', 'Ön görüşme yapıp takvime yazar', C.pink]].forEach(([a, b, col], i) => {
     const y = 380 + i * 200;
     card(150, y, 820, 170, col);
