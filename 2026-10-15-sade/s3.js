@@ -15,15 +15,15 @@ const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', {
 async function build() {
   await fontsReady(); paper('pink'); footer('3 / 8'); suslemeler();
   baslik('NE DEĞİŞTİ?', 'Zor aramalarda daha iyi', C.gold);
-  card(150, 380, 390, 470, C.pink);
+  card(150, 380, 390, 400, C.pink);
   text('ESKİ SÜRÜM', 345, 450, { size: 28, weight: 700, color: C.pink, anchor: 'middle', ls: 3 });
-  text('Yarı yarıya', 345, 600, { size: 52, weight: 700, color: C.ivory, anchor: 'middle' });
-  text('takılıyordu', 345, 660, { size: 34, color: C.muted, anchor: 'middle' });
-  card(570, 380, 400, 470, C.emerald);
+  text('Yarısında', 345, 600, { size: 52, weight: 700, color: C.ivory, anchor: 'middle' });
+  text('işi beceremiyordu', 345, 660, { size: 34, color: C.muted, anchor: 'middle' });
+  card(570, 380, 400, 400, C.emerald);
   text('YENİ SÜRÜM', 770, 450, { size: 28, weight: 700, color: C.emerald, anchor: 'middle', ls: 3 });
   text('Çoğunu', 770, 600, { size: 52, weight: 700, color: C.goldHi, anchor: 'middle' });
   text('hallediyor', 770, 660, { size: 34, color: C.ivory, anchor: 'middle' });
-  para('Zor arama: aksanlı, arkası gürültülü, sözün kesildiği görüşme. Sonuç, şirketin açıkladığı bir testten.', 150, 920, { size: 30, italic: true, color: C.muted, width: 820 });
+  para('Zor arama: aksanlı, arkası gürültülü ya da arayanın lafı böldüğü görüşme. Bu sonucu şirket kendi testinden açıkladı.', 150, 860, { size: 30, italic: true, color: C.muted, width: 820 });
   kaydir();
   done();
 }

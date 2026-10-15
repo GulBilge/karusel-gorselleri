@@ -17,14 +17,14 @@ async function build() {
   baslik('NE OLDU? · 14 EKİM', 'Yeni sürüm geldi', C.pink);
   card(150, 380, 820, 300, C.pink);
   ahize(300, 520, C.goldHi, 1.5); sesDalga(370, 505, C.pink, 1.2);
-  text('Musk\'ın şirketi xAI\'ın', 470, 480, { size: 31, weight: 700, color: C.ivory });
-  text('telefon asistanı Starlink\'te', 470, 530, { size: 31, weight: 700, color: C.ivory });
+  text('Musk\'ın yapay zeka şirketinin', 470, 480, { size: 31, weight: 700, color: C.ivory });
+  text('telefon asistanı, Starlink\'te', 470, 530, { size: 31, weight: 700, color: C.ivory });
   text('aylardır müşteriyle konuşuyor.', 470, 580, { size: 31, weight: 700, color: C.ivory });
-  text('Adı Grok Voice. 3. sürümü çıktı.', 470, 640, { size: 29, color: C.goldHi });
+  text('Adı Grok Voice. Yeni hâli çıktı.', 470, 640, { size: 29, color: C.goldHi });
   card(150, 720, 820, 270, C.gold);
   text('Fiyat değişmedi.', 200, 810, { size: 50, weight: 700, color: C.ivory });
-  text('Geçiş kendiliğinden.', 200, 875, { size: 50, weight: 700, italic: true, color: C.goldHi });
-  text('Kullananın bir şey yapması gerekmiyor.', 200, 940, { size: 34, color: C.muted });
+  text('Kendi kendine güncellendi.', 200, 875, { size: 50, weight: 700, italic: true, color: C.goldHi });
+  text('Telefon güncellemesi gibi.', 200, 940, { size: 34, color: C.muted });
   kaydir();
   done();
 }

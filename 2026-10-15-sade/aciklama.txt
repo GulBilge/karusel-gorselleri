@@ -1,4 +1,4 @@
-Musk'ın şirketi xAI'ın telefon asistanı Grok Voice, aylardır Starlink'i arayan müşterilerle konuşuyor. 14 Ekim'de yeni sürümü çıktı: şirketin testine göre zor aramalarda, yani aksanlı, gürültülü ya da sözün kesildiği görüşmelerde eskisinden daha iyi. Fiyat aynı kaldı. Rakamlar şirketin kendi sözü, Türkçe bilip bilmediği de belli değil.
+Musk'ın yapay zeka şirketinin telefon asistanı Grok Voice, aylardır Starlink'i arayan müşterilerle konuşuyor. 14 Ekim'de yeni hâli çıktı: şirketin kendi testine göre zor aramalarda, yani aksanlı, gürültülü ya da arayanın lafı böldüğü görüşmelerde eskisinden daha iyi. Fiyat aynı kaldı. Türkçe bilip bilmediği henüz belli değil.
 
 Kaynaklar:
 x.ai/news/grok-voice-3

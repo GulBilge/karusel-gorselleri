@@ -16,9 +16,9 @@ async function build() {
   });
   perde(720, 1250);
   rozetZemin(); profil(150, 124, 112);
-  chip('GROK VOICE · YENİ SÜRÜM', 150, 905, C.gold);
-  serif('Musk\'ın telefon', 150, 1010, { size: 72, color: C.ivory });
-  serif('asistanı yenilendi.', 150, 1094, { size: 72, color: C.goldHi });
+  chip('ELON MUSK · GROK VOICE', 150, 905, C.gold);
+  serif('Müşteriyle konuşan', 150, 1010, { size: 72, color: C.ivory });
+  serif('yapay zeka yenilendi.', 150, 1094, { size: 72, color: C.goldHi });
   serif('Ne değişti?', 150, 1178, { size: 72, color: C.ivory, italic: true, weight: 600 });
   text('kaydır →', 950, 1318, { size: 52, font: 'Caveat', weight: 700, color: C.gold, anchor: 'end' }).dataset.free = 1;
   done();

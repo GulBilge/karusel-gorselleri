@@ -15,7 +15,7 @@ const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', {
 async function build() {
   await fontsReady(); paper('purple'); footer('4 / 8'); suslemeler();
   baslik('ZATEN NE YAPIYORDU?', 'Starlink\'te neler yapıyor?', C.emerald);
-  const adim = [['Arayanı tanır, kontrol eder', C.emerald], ['Bozuk cihazla ilgilenir', C.gold], ['Gerekirse parasını geri öder', C.pink], ['Yeni cihaz gönderir', C.purple]];
+  const adim = [['Müşteri bilgilerini kontrol eder', C.emerald], ['Bozuk cihazla ilgilenir', C.gold], ['Gerekirse parasını geri öder', C.pink], ['Yeni cihaz gönderir', C.purple]];
   adim.forEach(([t, col], i) => {
     const y = 390 + i * 135;
     card(150, y, 820, 110, col);
