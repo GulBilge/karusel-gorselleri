@@ -74,6 +74,12 @@ Ortak noktalar: günlük fiil, kısa cümle, okuyanın gerçek bir derdi, rakam 
 - Çekincenin NEDEN önemli olduğunu söyle: "Rakamları şirket açıkladı" değil "Şirketin kendi sözü, kimse kontrol etmedi".
 - Kitlenin işini say: "Klinik" yerine "Salon / klinik" gibi okurun kendini bulacağı iş adları.
 
+## 4e. Sürüm haberi mi, yeni ürün mü? (Bilge, 15 Ekim 2026)
+- Duyurudaki ürün daha önce de var mıydı? Resmi sayfada "2.0", "same price as …", "upgraded automatically" gibi ipuçlarına bak; gerekirse ürünün adıyla önceki haberleri ara.
+- Ürün zaten varsa "çıkardı / yaptı" DEME. Doğru çerçeve: "X zaten vardı (ne zamandır, nerede kullanılıyor). Yeni sürümde şu değişti." Okurun "bunu duymuştum, yeni olan ne?" sorusuna 2. ve 3. slayt cevap verir.
+- Değişikliği somut söyle (eski sürüm ne yapıyordu, yenisi ne yapıyor), rakamı yine günlük dile çevir ("yarı yarıya takılıyordu" → "çoğunu hallediyor").
+- Kapak bu durumda "yenilendi / yeni sürüm" der ve değişikliği ya da "Ne değişti?" sorusunu taşır. Örnek: "Musk'ın telefon asistanı yenilendi. Ne değişti?"
+
 ## 5. Çekinceyi bir kez söyle
 - "Şirketin kendi verisi", "Türkiye'de geçerliliği belirtilmiyor" gibi uyarılar tek slaytta (DİKKAT) ya da caption'da bir kez yazılır; her slayta serpiştirilmez.
 

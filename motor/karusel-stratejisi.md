@@ -18,7 +18,7 @@ Kural: aşağıda "RESMİ" diye işaretli olanlar Instagram/Meta kaynaklıdır; 
 ## 2. Haber karuseli iskeleti (6–8 slayt, her slayt tek fikir)
 
 1. **KAPAK, durdurucu.** Konuyla güçlü bağlı, özgün kavram görseli (bkz. README "KAVRAM KAPAĞI") + özne (şirket/ürün) + okuyana değişen şey. 2 saniyede "bu benimle ilgili" dedirtmeli.
-2. **İKİNCİ KAPAK, haberin tek cümlesi.** Ne oldu, kim yaptı, ne zaman. Büyük yazı + küçük görsel. Instagram bu slaytı tek başına da gösterebilir: kapak görülmemiş gibi anlaşılır olmalı.
+2. **İKİNCİ KAPAK, haberin tek cümlesi.** Ne oldu, kim yaptı, ne zaman. Ürün zaten varsa: ne zamandır var + yeni sürümde ne değişti (3. slayt ÖNCE/SONRA eski sürüm–yeni sürüm olur). Büyük yazı + küçük görsel. Instagram bu slaytı tek başına da gösterebilir: kapak görülmemiş gibi anlaşılır olmalı.
 3. **ÖNCE / SONRA.** Dün nasıldı, bugün ne değişti (iki sütun, ikonla).
 4. **NASIL ÇALIŞIYOR.** 3 adımlık akış (ok, ikon, en çok 3 kısa etiket).
 5. **SENİN İŞİNDE.** 2–3 meslekten tek satırlık kullanım (klinik, eğitim, danışmanlık, e-ticaret). Varsayımsal ise "Örneğin (varsayımsal)" yaz.

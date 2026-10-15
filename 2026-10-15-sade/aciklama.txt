@@ -1,4 +1,4 @@
-Musk'ın internet şirketi Starlink'i arayanların çoğuyla artık yapay zeka konuşuyor. Bu yapay zekayı Musk'ın diğer şirketi xAI yaptı, adı Grok Voice. 14 Ekim'den beri isteyen şirket kullanabiliyor. Rakamlar şirketin kendi sözü, Türkçe bilip bilmediği de henüz belli değil.
+Musk'ın şirketi xAI'ın telefon asistanı Grok Voice, aylardır Starlink'i arayan müşterilerle konuşuyor. 14 Ekim'de yeni sürümü çıktı: şirketin testine göre zor aramalarda, yani aksanlı, gürültülü ya da sözün kesildiği görüşmelerde eskisinden daha iyi. Fiyat aynı kaldı. Rakamlar şirketin kendi sözü, Türkçe bilip bilmediği de belli değil.
 
 Kaynaklar:
 x.ai/news/grok-voice-3

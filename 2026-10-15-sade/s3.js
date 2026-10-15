@@ -14,20 +14,16 @@ const sesDalga = (x, y, col, s = 1) => { for (let i = 1; i <= 3; i++) P(svg, `M$
 const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-dasharray': '4 14', 'stroke-linecap': 'round' }); P(svg, `M${x2 - 14} ${y - 14} L${x2} ${y} L${x2 - 14} ${y + 14}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }); };
 async function build() {
   await fontsReady(); paper('pink'); footer('3 / 8'); suslemeler();
-  baslik('ÖNCE / SONRA', 'Tuşlamadan konuşmaya', C.gold);
-  card(150, 380, 390, 560, C.pink);
-  text('ÖNCE', 345, 450, { size: 28, weight: 700, color: C.pink, anchor: 'middle', ls: 3 });
-  // tuş takımı
-  for (let r = 0; r < 3; r++) for (let c = 0; c < 3; c++) { el('rect', { x: 262 + c * 62, y: 490 + r * 62, width: 48, height: 48, rx: 10, fill: 'none', stroke: C.muted, 'stroke-width': 4 }); text(String(r * 3 + c + 1), 286 + c * 62, 524 + r * 62, { size: 26, weight: 700, color: C.muted, anchor: 'middle' }).dataset.free = 1; }
-  text('"1\'e basın,', 345, 770, { size: 34, color: C.muted, anchor: 'middle' });
-  text('2\'ye basın…"', 345, 815, { size: 34, color: C.muted, anchor: 'middle' });
-  text('+ bekleme müziği', 345, 870, { size: 30, italic: true, color: C.muted, anchor: 'middle' });
-  card(570, 380, 400, 560, C.emerald);
-  text('SONRA', 770, 450, { size: 28, weight: 700, color: C.emerald, anchor: 'middle', ls: 3 });
-  ahize(740, 580, C.emerald, 1.6); sesDalga(820, 570, C.goldHi, 1.3);
-  text('Derdini', 770, 770, { size: 34, weight: 700, color: C.ivory, anchor: 'middle' });
-  text('anlatırsın, aynı', 770, 815, { size: 34, weight: 700, color: C.ivory, anchor: 'middle' });
-  text('aramada hallolur', 770, 860, { size: 34, weight: 700, color: C.goldHi, anchor: 'middle' });
+  baslik('NE DEĞİŞTİ?', 'Zor aramalarda daha iyi', C.gold);
+  card(150, 380, 390, 470, C.pink);
+  text('ESKİ SÜRÜM', 345, 450, { size: 28, weight: 700, color: C.pink, anchor: 'middle', ls: 3 });
+  text('Yarı yarıya', 345, 600, { size: 52, weight: 700, color: C.ivory, anchor: 'middle' });
+  text('takılıyordu', 345, 660, { size: 34, color: C.muted, anchor: 'middle' });
+  card(570, 380, 400, 470, C.emerald);
+  text('YENİ SÜRÜM', 770, 450, { size: 28, weight: 700, color: C.emerald, anchor: 'middle', ls: 3 });
+  text('Çoğunu', 770, 600, { size: 52, weight: 700, color: C.goldHi, anchor: 'middle' });
+  text('hallediyor', 770, 660, { size: 34, color: C.ivory, anchor: 'middle' });
+  para('Zor arama: aksanlı, arkası gürültülü, sözün kesildiği görüşme. Sonuç, şirketin açıkladığı bir testten.', 150, 920, { size: 30, italic: true, color: C.muted, width: 820 });
   kaydir();
   done();
 }

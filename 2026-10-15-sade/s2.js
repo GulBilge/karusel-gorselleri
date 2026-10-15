@@ -14,17 +14,17 @@ const sesDalga = (x, y, col, s = 1) => { for (let i = 1; i <= 3; i++) P(svg, `M$
 const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-dasharray': '4 14', 'stroke-linecap': 'round' }); P(svg, `M${x2 - 14} ${y - 14} L${x2} ${y} L${x2 - 14} ${y + 14}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }); };
 async function build() {
   await fontsReady(); paper('purple'); footer('2 / 8'); suslemeler();
-  baslik('NE OLDU? · 14 EKİM', 'Telefonu yapay zeka açıyor', C.pink);
+  baslik('NE OLDU? · 14 EKİM', 'Yeni sürüm geldi', C.pink);
   card(150, 380, 820, 300, C.pink);
   ahize(300, 520, C.goldHi, 1.5); sesDalga(370, 505, C.pink, 1.2);
-  text('Musk\'ın yapay zeka şirketi', 470, 480, { size: 33, weight: 700, color: C.ivory });
-  text('xAI, müşteriyle telefonda', 470, 530, { size: 33, weight: 700, color: C.ivory });
-  text('konuşan yapay zeka yaptı.', 470, 580, { size: 33, weight: 700, color: C.ivory });
-  text('Adı: Grok Voice', 470, 640, { size: 32, color: C.goldHi });
+  text('Musk\'ın şirketi xAI\'ın', 470, 480, { size: 31, weight: 700, color: C.ivory });
+  text('telefon asistanı Starlink\'te', 470, 530, { size: 31, weight: 700, color: C.ivory });
+  text('aylardır müşteriyle konuşuyor.', 470, 580, { size: 31, weight: 700, color: C.ivory });
+  text('Adı Grok Voice. 3. sürümü çıktı.', 470, 640, { size: 29, color: C.goldHi });
   card(150, 720, 820, 270, C.gold);
-  text('Hiç bekletmeden', 200, 810, { size: 50, weight: 700, color: C.ivory });
-  text('cevap veriyor.', 200, 875, { size: 50, weight: 700, italic: true, color: C.goldHi });
-  text('O konuşurken araya girebiliyorsun.', 200, 940, { size: 34, color: C.muted });
+  text('Fiyat değişmedi.', 200, 810, { size: 50, weight: 700, color: C.ivory });
+  text('Geçiş kendiliğinden.', 200, 875, { size: 50, weight: 700, italic: true, color: C.goldHi });
+  text('Kullananın bir şey yapması gerekmiyor.', 200, 940, { size: 34, color: C.muted });
   kaydir();
   done();
 }

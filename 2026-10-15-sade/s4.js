@@ -14,7 +14,7 @@ const sesDalga = (x, y, col, s = 1) => { for (let i = 1; i <= 3; i++) P(svg, `M$
 const ok = (x1, y, x2, col = C.gold) => { P(svg, `M${x1} ${y} H${x2}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-dasharray': '4 14', 'stroke-linecap': 'round' }); P(svg, `M${x2 - 14} ${y - 14} L${x2} ${y} L${x2 - 14} ${y + 14}`, 'none', { stroke: col, 'stroke-width': 6, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' }); };
 async function build() {
   await fontsReady(); paper('purple'); footer('4 / 8'); suslemeler();
-  baslik('ŞU AN KİM KULLANIYOR?', 'Starlink\'te neler yapıyor?', C.emerald);
+  baslik('ZATEN NE YAPIYORDU?', 'Starlink\'te neler yapıyor?', C.emerald);
   const adim = [['Arayanı tanır, kontrol eder', C.emerald], ['Bozuk cihazla ilgilenir', C.gold], ['Gerekirse parasını geri öder', C.pink], ['Yeni cihaz gönderir', C.purple]];
   adim.forEach(([t, col], i) => {
     const y = 390 + i * 135;
