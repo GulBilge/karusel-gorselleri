@@ -99,6 +99,17 @@ function profil(x, y, d = 104) {
   serif('Bilge Gül Koç', tx, cy - 4, { size: 44, weight: 700, color: C.ivory });
   text('YAPAY ZEKA EĞİTMENİ', tx, cy + 38, { size: TS.label, weight: 700, color: C.gold, ls: 4 });
 }
+// Gerçek ürün görseli (Bilge, 16 Ekim 2026): yalnızca şirketin resmi basın sayfasından/kitinden; motor/ klasörüne kopyalanır.
+// Yuvarlatılmış çerçeve + ince altın kenar + sağ altta kaynak yazısı (ör. 'Görsel: Amazon'). Kapakta KULLANILMAZ.
+function urunGorsel(href, x, y, w, h, kaynak, o = {}) {
+  const id = 'ug' + sd(), rx = o.rx || 24;
+  const defs = svg.querySelector('defs') || el('defs');
+  const cp = el('clipPath', { id }, defs); el('rect', { x, y, width: w, height: h, rx }, cp);
+  el('rect', { x, y, width: w, height: h, rx, fill: o.zemin || '#F4F1EC' });
+  el('image', { href, x, y, width: w, height: h, 'clip-path': `url(#${id})`, preserveAspectRatio: o.kirp || 'xMidYMid slice' });
+  el('rect', { x, y, width: w, height: h, rx, fill: 'none', stroke: C.gold, 'stroke-width': 3 });
+  if (kaynak) text(kaynak, x + w - 20, y + h - 18, { size: 22, weight: 600, color: '#5A5650', anchor: 'end' }).dataset.free = 1;
+}
 // Kart: koyu zemin, ince altın kenar, solda vurgu rengi şeridi
 function card(x, y, w, h, accent = C.gold) {
   el('rect', { x, y, width: w, height: h, rx: 20, fill: C.card, stroke: C.gold, 'stroke-opacity': 0.35, 'stroke-width': 1.5 });

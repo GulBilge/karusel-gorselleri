@@ -17,16 +17,14 @@ const telKart = (x, y, col, s = 1) => { el('rect', { x: x - 40 * s, y: y - 75 * 
 async function build() {
   await fontsReady(); paper('pink'); footer('3 / 8'); suslemeler();
   baslik('NE DEĞİŞTİ?', 'Artık iki seçenek var', C.gold);
-  card(150, 380, 820, 270, C.emerald);
-  bileklik(250, 520, C.emerald, 1.2);
-  text('BİLEKLİK', 350, 445, { size: 26, weight: 700, color: C.emerald, ls: 3 });
-  para('Bileğe ya da yakaya takılıyor. Şarjı bir hafta gidiyor, suya dayanıklı.', 350, 500, { size: 31, weight: 700, color: C.ivory, width: 580 });
-  text('Adı: Bee Frontier', 350, 620, { size: 28, color: C.muted });
-  card(150, 680, 820, 300, C.pink);
-  telKart(250, 830, C.pink, 1);
-  text('TELEFONA YAPIŞAN', 350, 745, { size: 26, weight: 700, color: C.pink, ls: 3 });
-  para('Kredi kartı boyunda, telefonun arkasına mıknatısla yapışıyor. Şarjı 3 haftadan fazla gidiyor.', 350, 800, { size: 31, weight: 700, color: C.ivory, width: 580 });
-  text('Adı: Bee Eclipse · yakında', 350, 950, { size: 28, color: C.muted });
+  urunGorsel('urun.jpg', 150, 380, 820, 566, 'Görsel: Amazon', { kirp: 'xMidYMid meet' });
+  chip('BİLEKLİK', 175, 405, C.emerald, true);
+  chip('TELEFONA YAPIŞAN', 590, 405, C.pink, true);
+  card(150, 975, 820, 160, C.gold);
+  bullet(195, 1023, C.emerald);
+  text('Bileklik: yakaya da takılıyor, şarjı 1 hafta', 220, 1033, { size: 30, weight: 700, color: C.ivory });
+  bullet(195, 1087, C.pink);
+  text('Telefona yapışan: kart boyunda, şarjı 3 hafta', 220, 1097, { size: 30, weight: 700, color: C.ivory });
   kaydir();
   done();
 }
