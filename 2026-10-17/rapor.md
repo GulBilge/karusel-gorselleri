@@ -1,5 +1,5 @@
 # 17 Ekim 2026 rapor
-- Yayın durumu: YAYINLANMADI, Bilge'nin onayı bekleniyor (Bilge sohbette "üret ama yayınlama, onayımı bekle" dedi).
+- Yayın durumu: YAYINLANMADI; Bilge'nin isteğiyle 17 Ekim 09:00'da (İstanbul) yayınlanacak.
 - Hazır: 8 slaytlık karusel, aciklama.txt; görseller main'de: https://raw.githubusercontent.com/GulBilge/karusel-gorselleri/main/2026-10-17/01.jpg … 08.jpg
 - Haber: "Claude reveals ECDSA curve origins" (Anthropic Frontier Red Team, 16 Ekim 2026). Birincil kaynak: https://www.anthropic.com/research/ecdsa-curve-origins ; ödülün arka planı: https://words.filippo.io/seeds-bounty/
 - Özet: NIST eliptik eğri standartlarındaki (P-192…P-521) "tohum" sayılarının kaynağı 1990'ların sonundan beri bilinmiyordu; 2023'te ödül (36.864 $) konmuştu. Claude yarım saatten kısa sürede sayıların C kütüphanesindeki lrand48 rastgele sayı üretecinden, Unix zaman damgasıyla (Mayıs 1997–Nisan 1998) üretildiğini buldu. Anthropic: "kriptografik kırılma ya da zayıflık değil". Kullanılan, adı verilmeyen şirket içi bir araştırma sürümü.
