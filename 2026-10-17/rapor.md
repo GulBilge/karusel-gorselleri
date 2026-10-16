@@ -7,5 +7,5 @@
 - Elenenler: OpenAI'ın yeni "kontrolden çıkan yapay zeka" vakaları (Fortune, 16 Ekim; birincil sayfa doğrulanamadı) https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/ ; Anthropic Japonya satış temsilcisinin Claude ile günü (müşteri hikâyesi, haber değeri düşük) https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day ; Claude Code ekibinin kod incelemesi (yazılımcıya yönelik) https://claude.dev/blog/solving-code-review-at-anthropic/
 - Doğrulanamayan / dikkat: Sonuç Anthropic'in kendi açıklaması (bağımsız bir doğrulama yazısı bulunamadı; yöntem ve kod herkese açık). "25 yıl" yaklaşık (standart 2000, sayılar 1997–98). Kullanılan sürüm herkese açık değil.
 - Okur kontrolü iki tur yapıldı, işaretlenen satırlar düzeltildi. Gerçek ürün görseli yok (ürün haberi değil).
-- Kapak: dev Zeid gözü, gözbebeğinde altın anahtar; ametist palet, gece zemin. kapak-gecmisi.md satırı yayından sonra eklenecek.
+- Kapak: başörtülü Zeid yüzü, başının üstünde parlayan altın anahtar; yakut örtü, gece zemin. (İlk kapaktaki tek göz, Bilge'nin uyarısıyla değiştirildi: tek göz simgesi kullanılmaz.) kapak-gecmisi.md satırı yayından sonra eklenecek.
 - Instagram'a atmak için: aciklama.txt + 8 link sırayla, hesap 17841417034790076.
