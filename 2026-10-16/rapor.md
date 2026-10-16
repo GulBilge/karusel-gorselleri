@@ -1,5 +1,5 @@
 # 16 Ekim 2026 rapor
-- Yayın durumu: YAYINLANAMADI. Windsor.ai bağlayıcısı bu oturumda yoktu (araç araması sonuç vermedi); Instagram'a gönderilmedi.
+- Yayın durumu: YAYINLANDI 19:01 (İstanbul), media id 18468162631189156. İlk denemede Windsor yoktu, ikinci çalıştırmada gönderildi.
 - Hazır: 8 slaytlık karusel, aciklama.txt, görseller main'de (linkler 200 image/jpeg): https://raw.githubusercontent.com/GulBilge/karusel-gorselleri/main/2026-10-16/01.jpg … 08.jpg
 - Haber: Anthropic, bağımsız denetçi METR'e çalışan düzeyinde erişim verdi (15 Ekim 2026). Birincil kaynak: https://www.anthropic.com/news/an-update-on-independent-evaluators ; ikincil: TechCrunch 15 Ekim.
 - Neden: Claude/Anthropic önceliği; güven ve veri güvenliği, işinde yapay zeka kullananları ilgilendiriyor.
