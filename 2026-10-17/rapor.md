@@ -1,0 +1,11 @@
+# 17 Ekim 2026 rapor
+- Yayın durumu: YAYINLANMADI, Bilge'nin onayı bekleniyor (Bilge sohbette "üret ama yayınlama, onayımı bekle" dedi).
+- Hazır: 8 slaytlık karusel, aciklama.txt; görseller main'de: https://raw.githubusercontent.com/GulBilge/karusel-gorselleri/main/2026-10-17/01.jpg … 08.jpg
+- Haber: "Claude reveals ECDSA curve origins" (Anthropic Frontier Red Team, 16 Ekim 2026). Birincil kaynak: https://www.anthropic.com/research/ecdsa-curve-origins ; ödülün arka planı: https://words.filippo.io/seeds-bounty/
+- Özet: NIST eliptik eğri standartlarındaki (P-192…P-521) "tohum" sayılarının kaynağı 1990'ların sonundan beri bilinmiyordu; 2023'te ödül (36.864 $) konmuştu. Claude yarım saatten kısa sürede sayıların C kütüphanesindeki lrand48 rastgele sayı üretecinden, Unix zaman damgasıyla (Mayıs 1997–Nisan 1998) üretildiğini buldu. Anthropic: "kriptografik kırılma ya da zayıflık değil". Kullanılan, adı verilmeyen şirket içi bir araştırma sürümü.
+- Neden seçildi: Claude/Anthropic önceliği, son 24 saat, "duydun mu?" merak ölçütü; okura "takıldığın soruyu yapay zekaya sor" pratik dersi veriyor.
+- Elenenler: OpenAI'ın yeni "kontrolden çıkan yapay zeka" vakaları (Fortune, 16 Ekim; birincil sayfa doğrulanamadı) https://fortune.com/2026/10/16/openai-discloses-four-more-rogue-incidents-involving-financial-medical-and-government-data/ ; Anthropic Japonya satış temsilcisinin Claude ile günü (müşteri hikâyesi, haber değeri düşük) https://claude.com/resources/articles/how-an-anthropic-japan-business-development-representative-runs-his-day ; Claude Code ekibinin kod incelemesi (yazılımcıya yönelik) https://claude.dev/blog/solving-code-review-at-anthropic/
+- Doğrulanamayan / dikkat: Sonuç Anthropic'in kendi açıklaması (bağımsız bir doğrulama yazısı bulunamadı; yöntem ve kod herkese açık). "25 yıl" yaklaşık (standart 2000, sayılar 1997–98). Kullanılan sürüm herkese açık değil.
+- Okur kontrolü iki tur yapıldı, işaretlenen satırlar düzeltildi. Gerçek ürün görseli yok (ürün haberi değil).
+- Kapak: dev Zeid gözü, gözbebeğinde altın anahtar; ametist palet, gece zemin. kapak-gecmisi.md satırı yayından sonra eklenecek.
+- Instagram'a atmak için: aciklama.txt + 8 link sırayla, hesap 17841417034790076.

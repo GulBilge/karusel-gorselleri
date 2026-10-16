@@ -1,0 +1,7 @@
+Claude'u yapan şirket Anthropic açıkladı: Yapay zeka asistanı Claude, uzmanların 25 yıldır çözemediği, şifrelerle ilgili bir soruyu yarım saatte çözdü. Bunu yapan sürüm henüz herkese açık değil.
+
+Kaynaklar:
+anthropic.com/research/ecdsa-curve-origins
+words.filippo.io/seeds-bounty
+
+#teknikbilgekoc #gunlukyapayzekahaberi
