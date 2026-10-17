@@ -7,3 +7,4 @@ Her yayından sonra bir satır ekle. Yeni kapakta son 7 satırla kıyasla: ana f
 | 2026-10-14 | Uber CISO yapay zeka iç tehdit | karikatür yüz + kalkan (eski motor) | yüz (karikatür) | kaleydoskop | kemer | lacivert |
 | 2026-10-15 | xAI Grok Voice 3.0 sesli ajan | konuşan mozaik telefon ahizesi + madalyonda minik yapay zeka yüzü | nesne (ahize) | halkalar | tam | gece + safran |
 | 2026-10-16 | Anthropic bağımsız denetçi (METR) | aralık kapı, içeriden ışık (mozaik) | nesne (kapı) | gece zemin | tam | zümrüt |
+| 2026-10-17 | Claude ECDSA eğri tohumları gizemi | başörtülü Zeid yüzü + başının üstünde altın anahtar | yüz | gece zemin | tam | yakut + gece + altın |
