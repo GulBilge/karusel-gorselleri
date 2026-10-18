@@ -1,0 +1,7 @@
+Claude'u yapan şirket Anthropic açıkladı: Yapay zeka asistanı Claude, kuantum denen yeni tür süper bilgisayarlar için hazırlanmış sekiz adım listesini sıfırdan yazdı; bazılarını çok daha kısa buldu.
+
+Kaynaklar:
+anthropic.com/research/designing-efficient-quantum-circuits
+arxiv.org/abs/2610.22367
+
+#teknikbilgekoc #gunlukyapayzekahaberi
