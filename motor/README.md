@@ -53,3 +53,6 @@ Aşağıdaki eski "açık defter" kuralları yerine bu bölüm geçerlidir. Moto
   "Detaylar ve kaynaklar açıklamada" son detay sayfasında; "Kaydedin, meslektaşınıza gönderin." + kaynak satırı şema sayfasında.
 - JPEG adları sırayla: `01-kapak.jpg`, `02-detaylar.jpg`, (`03-detaylar-2.jpg`), son sayfa `NN-sema.jpg`. Yayında tüm linkler bu sırayla verilir.
 - `node shot.js` çıktısındaki `UYARI` satırları (güvenli alan dışı, küçük yazı, üst üste binme) sıfırlanmadan yayınlama; yine de her PNG'yi gözle kontrol et.
+
+## SADE HİKÂYE (Bilge, 18 Ekim 2026; deneme)
+Günlük haber için kapaksız, süssüz 3 karelik Instagram hikâyesi (1080x1920): `lib-hikaye.js`, `tpl-hikaye.html`, `node shot.js 1 2 3 --hikaye` (girdi `h1.js…`, çıktı `out/h01.png…`). Düz koyu zemin, tek altın vurgu, yazılar y 250–1650 arasında. Örnek: `../2026-10-18-hikaye-deneme/`.
