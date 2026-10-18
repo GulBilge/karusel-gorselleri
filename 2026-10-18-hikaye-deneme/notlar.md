@@ -6,3 +6,7 @@ Bilge'nin isteği: kapak yok, son derece sade, sadece haber veren 3 karelik Inst
 - Görsel: aynı sayfadaki resmi görsel (https://assets.claude.com/209fde33711300fd8cfb2f1fc7005f21bca2a20d.png), yüz içermeyen konu satırı kırpıldı.
 - Okur kontrolü yapıldı, işaretlenen satırlar düzeltildi.
 - Dikkat: haber 16 Ekim tarihli, 48 saat sınırını aşıyor; yayınlanacaksa "KAÇIRDIYSANIZ" etiketi gerekir. Windsor ile atılan hikâyeye yazı/link/anket eklenemez; "Yaz bana" çağrısı hikâye cevaplarıyla çalışır.
+
+## 2. sürüm (Bilge: "gönderiden hiçbir şey anlamadım")
+İlk sürümde altı ayrı asistan, İngilizce ekran görüntüsü, satış terimleri ve çekinceler bir araya gelince ana fikir kayboldu. 2. sürümde kare başına tek fikir var: ne oldu / nasıl / sana ne. Görsel ve maddeli liste yok, büyük yazı kullanıldı, ayrıntılar atıldı.
+Ders: hikâyede her kare tek cümleyle anlaşılmalı; okur haberi bilmeden, bir arkadaşına anlatır gibi.
