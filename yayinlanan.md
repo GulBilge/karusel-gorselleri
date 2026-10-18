@@ -16,3 +16,4 @@ Her sabah haber seçmeden önce bu dosyaya bakın; listedeki bir haberi tekrar s
 | 2026-10-15 | xAI Grok Voice 3.0 sesli ajan (14 Ekim 2026) | https://x.ai/news/grok-voice-3 | Bilge elle yayınladı (depoya push yetkisi yoktu); klasör `2026-10-15/` |
 | 2026-10-16 | Anthropic bağımsız denetçi METR'e çalışan düzeyinde erişim verdi (15 Ekim 2026) | https://www.anthropic.com/news/an-update-on-independent-evaluators | Otomatik yayın (yayınladı 19:01, geç: ilk denemede Windsor yoktu); klasör `2026-10-16/` |
 | 2026-10-17 | Claude, NIST eliptik eğri tohum sayılarının 25 yıllık gizemini çözdü (16 Ekim 2026) | https://www.anthropic.com/research/ecdsa-curve-origins | Otomatik yayın (07:21); klasör `2026-10-17/` |
+| 2026-10-18 | Claude, kuantum bilgisayar devrelerini kısalttı (16 Ekim 2026, KAÇIRDIYSANIZ) | https://www.anthropic.com/research/designing-efficient-quantum-circuits | Otomatik yayın (09:57); klasör `2026-10-18/` |
