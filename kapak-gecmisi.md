@@ -9,3 +9,4 @@ Her yayından sonra bir satır ekle. Yeni kapakta son 7 satırla kıyasla: ana f
 | 2026-10-16 | Anthropic bağımsız denetçi (METR) | aralık kapı, içeriden ışık (mozaik) | nesne (kapı) | gece zemin | tam | zümrüt |
 | 2026-10-17 | Claude ECDSA eğri tohumları gizemi | başörtülü Zeid yüzü + başının üstünde altın anahtar | yüz | gece zemin | tam | yakut + gece + altın |
 | 2026-10-18 | Claude kuantum devresi kısaltma | dolaşık mozaik ip yumağı + çıkan düz altın ip | nesne (yumak) | gece zemin | tam | lapis + gece + altın |
+| 2026-10-21 | Claude Security (sürekli kontrol) | kalkan mozaik (nöbetçi) | nesne (kalkan) | gece zemin | kemer | zümrüt + gece + altın |
