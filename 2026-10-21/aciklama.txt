@@ -1,0 +1,6 @@
+Claude'u yapan şirket Anthropic, yazılımlardaki güvenlik boşluklarını arayan programı Claude Security'yi yeniledi: artık yazılım değiştikçe kendisi yeniden kontrol ediyor. Şimdilik yalnızca Claude Enterprise kullanan şirketlerde deneme sürümü.
+
+Kaynaklar:
+claude.com/resources/articles/claude-security-now-scans-continuously-and-tracks-fixes
+
+#teknikbilgekoc #gunlukyapayzekahaberi
